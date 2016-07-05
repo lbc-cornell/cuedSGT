@@ -1,1 +1,7 @@
-#cued SGT
+# cuedSGT
+
+EPrime script for a replication of Cued Self-Generated Thought, originally published by Spreng and Grady (J Cogn. Neurosci. 22, 1112-1123, 2010). The present script is detailed in a Scientific Data manuscript, currently under review. 
+
+Briefly, participants were presented with the three experimental conditions detailed in Spreng and Grady (2010), a sensorimotor control condition, and a novel second control condition. In the three experimental conditions, IAPS images were presented and followed by condition-specific cued self-generated thought prompts (e.g., "Imagine what the women in the photograph were thinking and feeling.") Participants were instructed to rate the clarity of their visualization on a scale of 1-3. In the sensorimotor control condition, participants were presented with a scrambled image followed by a button press instruction. In the novel second control condition, participants were presented with an IAPS image immediately followed by a fixation. In all conditions, each image was presented with an associated cue word (e.g., with a picture of a classroom, the cue word "Learning" would be presented.)
+
+The provided EPrime script allows for additional data collection with this protocol. Please note that we are not able to provide the associated stimuli, as these require a prior agreement with the Center for the Study of Emotion and Attention at the University of Florida (http://csea.phhp.ufl.edu/media.html). 
