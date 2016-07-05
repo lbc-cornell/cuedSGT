@@ -1,0 +1,2839 @@
+'
+'
+'
+'	
+'	
+'
+'
+'	This experiment has been generated with E-Prime version: 2.0.10.242
+'
+'	This file generated with E-Studio interface.
+'	E-Prime Copyright © 1996-2012 Psychology Software Tools.
+'	ALL RIGHTS RESERVED
+'
+'	Legal use of this experiment script requires a full E-Prime or Runtime License.
+'
+'
+'	Author:
+'		R. Nathan Spreng
+'
+'
+'
+'
+
+Option CStrings On
+Dim ebContext As Context
+
+
+'--------------------------------------------------------------------------
+' Class Declarations
+'--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'--------------------------------------------------------------------------
+' Instance Declarations
+'--------------------------------------------------------------------------
+Dim Display As DisplayDevice
+Dim Sound As SoundDevice
+Dim Keyboard As KeyboardDevice
+Dim Mouse As MouseDevice
+Dim Photoslide As Slide
+Dim PhotoslideEchoClients As EchoClientCollection
+Dim Photoslide_State As SlideState
+Dim Photoslide_SlideImage As SlideImage
+
+Dim Questionslide As Slide
+Dim QuestionslideEchoClients As EchoClientCollection
+Dim Questionslide_State As SlideState
+Dim Questionslide_SlideText As SlideText
+
+Dim ss As Slide
+Dim ss_State As SlideState
+
+' List Attribute Constants
+Const attrib_weight = ebUCase_W & ebLCase_e & ebLCase_i & ebLCase_g & ebLCase_h & ebLCase_t
+Const attrib_nested = ebUCase_N & ebLCase_e & ebLCase_s & ebLCase_t & ebLCase_e & ebLCase_d
+Const attrib_procedure = ebUCase_P & ebLCase_r & ebLCase_o & ebLCase_c & ebLCase_e & ebLCase_d & ebLCase_u & ebLCase_r & ebLCase_e
+Const attrib_pictures = ebUCase_P & ebLCase_i & ebLCase_c & ebLCase_t & ebLCase_u & ebLCase_r & ebLCase_e & ebLCase_s
+Const attrib_p = ebLCase_p
+Const attrib_f = ebLCase_f
+Const attrib_o = ebLCase_o
+Const attrib_cueword = ebUCase_C & ebLCase_u & ebLCase_e & ebUCase_W & ebLCase_o & ebLCase_r & ebLCase_d
+Const attrib_stim = ebLCase_s & ebLCase_t & ebLCase_i & ebLCase_m
+Const attrib_n = ebLCase_n
+Const attrib_path = ebUCase_P & ebUCase_A & ebUCase_T & ebUCase_H
+Const attrib_qtype = ebUCase_Q & ebLCase_t & ebLCase_y & ebLCase_p & ebLCase_e
+Const attrib_qtask = ebUCase_Q & ebLCase_t & ebLCase_a & ebLCase_s & ebLCase_k
+Const attrib_ntask = ebUCase_N & ebLCase_t & ebLCase_a & ebLCase_s & ebLCase_k
+Const attrib_c = ebLCase_c
+
+Dim Stimuli1 As List
+
+Dim allruns As List
+
+Dim RunOrder1 As List
+
+Dim Control1 As List
+
+Dim Stimuli3 As List
+
+Dim RunOrder2 As List
+
+Dim RunOrder3 As List
+
+Dim RunOrder4 As List
+
+Dim Stimuli2 As List
+
+Dim Control2 As List
+
+Dim Control3 As List
+
+Dim Stimuli4 As List
+
+Dim Control4 As List
+
+Dim List1 As List
+
+Dim SessionProc As Procedure
+
+Dim BlockProc As Procedure
+
+Dim run1proc As Procedure
+
+Dim run2proc As Procedure
+
+Dim run3proc As Procedure
+
+Dim run4proc As Procedure
+
+Dim PictureDisplay As ImageDisplay
+Dim PictureDisplayEchoClients As EchoClientCollection
+
+Dim QuestionDisplay As ImageDisplay
+Dim QuestionDisplayEchoClients As EchoClientCollection
+
+Dim ITI As ImageDisplay
+Dim ITIEchoClients As EchoClientCollection
+
+Dim Instructions As TextDisplay
+Dim InstructionsEchoClients As EchoClientCollection
+
+Dim EndOfStudy As TextDisplay
+
+Dim Fixationtxt As TextDisplay
+Dim FixationtxtEchoClients As EchoClientCollection
+
+Dim Fixationtxt1 As TextDisplay
+Dim Fixationtxt1EchoClients As EchoClientCollection
+
+Dim ITItxt As TextDisplay
+
+Dim Fixationtxt2 As TextDisplay
+Dim Fixationtxt2EchoClients As EchoClientCollection
+
+Dim Fixationtxt3 As TextDisplay
+Dim Fixationtxt3EchoClients As EchoClientCollection
+
+Dim Fixationtxt4 As TextDisplay
+Dim Fixationtxt4EchoClients As EchoClientCollection
+
+Dim Fixationtxt5 As TextDisplay
+Dim Fixationtxt5EchoClients As EchoClientCollection
+
+Dim Fixationtxt6 As TextDisplay
+Dim Fixationtxt6EchoClients As EchoClientCollection
+
+Dim Fixationtxt7 As TextDisplay
+Dim Fixationtxt7EchoClients As EchoClientCollection
+
+Dim Questiontxt As TextDisplay
+Dim QuestiontxtEchoClients As EchoClientCollection
+
+
+
+'--------------------------------------------------------------------------
+' Package Declare Script
+'--------------------------------------------------------------------------
+
+
+
+'--------------------------------------------------------------------------
+' User Script - BEGIN
+'--------------------------------------------------------------------------
+Dim StartTime As Double
+
+'--------------------------------------------------------------------------
+' User Script - END
+'--------------------------------------------------------------------------
+
+
+
+'--------------------------------------------------------------------------
+' Package Global Script
+'--------------------------------------------------------------------------
+
+
+
+'--------------------------------------------------------------------------
+' Implementation
+'--------------------------------------------------------------------------
+
+
+
+
+
+
+Sub SessionProc_Run(c As Context)
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	
+	'''''''''''''''''''''''''''''''''''''''''''''
+	' InLine - Clock BEGIN <Clock>
+	'''''''''''''''''''''''''''''''''''''''''''''
+	'clock.scale=.12
+	'''''''''''''''''''''''''''''''''''''''''''''
+	' InLine - Clock END
+	'''''''''''''''''''''''''''''''''''''''''''''
+	
+		allruns.Run c
+	
+	
+	EndOfStudy.Run
+	'''''''''''''''''''''''''''''''''''''''''''''
+	'End Of Procedure Clean-Up
+	'''''''''''''''''''''''''''''''''''''''''''''
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	EndOfStudy.EndOfProcedure
+
+
+	c.Log
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+End Sub
+
+Sub BlockProc_Run(c As Context)
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+		Select Case Photoslide.ActiveState
+		Case ebUCase_P & ebLCase_h & ebLCase_o & ebLCase_t & ebLCase_o
+
+			'Image1
+			Set Photoslide_SlideImage = CSlideImage(Photoslide.ActiveSlideState.Objects(ebUCase_I & ebLCase_m & ebLCase_a & ebLCase_g & ebLCase_e & ebDigit_1))
+			Photoslide_SlideImage.Filename = c.GetAttrib("PATH") &_ 
+				c.GetAttrib("Pictures")
+			Photoslide_SlideImage.Load
+			Set Photoslide_SlideImage = Nothing
+
+	End Select
+
+	
+	
+	Photoslide.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		PhotoslideEchoClients.RemoveAll
+		Photoslide.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Photoslide.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Photoslide.Run
+	
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOnsetDelay, Photoslide.OnsetDelay
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOnsetTime, Photoslide.OnsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameDurationError, Photoslide.DurationError
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNamePreRelease, Photoslide.PreRelease
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameDuration, Photoslide.Duration
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameStartTime, Photoslide.StartTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOffsetTime, Photoslide.OffsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameFinishTime, Photoslide.FinishTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameTimingMode, Photoslide.TimingMode
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameCustomOnsetTime, Photoslide.CustomOnsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameCustomOffsetTime, Photoslide.CustomOffsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameActionDelay, Photoslide.ActionDelay
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameActionTime, Photoslide.ActionTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameTargetOffsetTime, Photoslide.TargetOffsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameTargetOnsetTime, Photoslide.TargetOnsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOffsetDelay, Photoslide.OffsetDelay
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameTag, Photoslide.Tag
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOnsetToOnsetTime, Photoslide.OnsetToOnsetTime
+	
+		Select Case Questionslide.ActiveState
+		Case ebUCase_D & ebLCase_e & ebLCase_f & ebLCase_a & ebLCase_u & ebLCase_l & ebLCase_t
+
+
+			'Text3
+			Set Questionslide_SlideText = CSlideText(Questionslide.ActiveSlideState.Objects(ebUCase_T & ebLCase_e & ebLCase_x & ebLCase_t & ebDigit_3))
+			Questionslide_SlideText.Text = c.GetAttrib(ebUCase_N & ebLCase_t & ebLCase_a & ebLCase_s & ebLCase_k)
+			Set Questionslide_SlideText = Nothing
+
+			'Text1
+			Set Questionslide_SlideText = CSlideText(Questionslide.ActiveSlideState.Objects(ebUCase_T & ebLCase_e & ebLCase_x & ebLCase_t & ebDigit_1))
+			Questionslide_SlideText.Text = c.GetAttrib(ebUCase_Q & ebLCase_t & ebLCase_y & ebLCase_p & ebLCase_e)
+			Set Questionslide_SlideText = Nothing
+
+			'Text2
+			Set Questionslide_SlideText = CSlideText(Questionslide.ActiveSlideState.Objects(ebUCase_T & ebLCase_e & ebLCase_x & ebLCase_t & ebDigit_2))
+			Questionslide_SlideText.Text = c.GetAttrib(ebUCase_Q & ebLCase_t & ebLCase_a & ebLCase_s & ebLCase_k)
+			Set Questionslide_SlideText = Nothing
+
+	End Select
+
+	
+	
+	Questionslide.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		QuestionslideEchoClients.RemoveAll
+		Questionslide.InputMasks.Add Keyboard.CreateInputMask(ebDigit_1 & ebDigit_2 & ebDigit_3, ebEmptyText, CLng(ebDigit_1 & ebDigit_3 & ebDigit_0 & ebDigit_0 & ebDigit_0), CLng(ebDigit_1), ebEndResponseActionNone, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Questionslide.Run
+	
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOnsetDelay, Questionslide.OnsetDelay
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOnsetTime, Questionslide.OnsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameDurationError, Questionslide.DurationError
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNamePreRelease, Questionslide.PreRelease
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameDuration, Questionslide.Duration
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameStartTime, Questionslide.StartTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOffsetTime, Questionslide.OffsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameFinishTime, Questionslide.FinishTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameTimingMode, Questionslide.TimingMode
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameCustomOnsetTime, Questionslide.CustomOnsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameCustomOffsetTime, Questionslide.CustomOffsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameActionDelay, Questionslide.ActionDelay
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameActionTime, Questionslide.ActionTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameTargetOffsetTime, Questionslide.TargetOffsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameTargetOnsetTime, Questionslide.TargetOnsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOffsetDelay, Questionslide.OffsetDelay
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameRTTime, Questionslide.RTTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameRT, Questionslide.RT
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameRESP, Questionslide.RESP
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOnsetToOnsetTime, Questionslide.OnsetToOnsetTime
+	
+	
+	
+	ITItxt.Run
+	'''''''''''''''''''''''''''''''''''''''''''''
+	'End Of Procedure Clean-Up
+	'''''''''''''''''''''''''''''''''''''''''''''
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	Photoslide.EndOfProcedure
+
+	Questionslide.EndOfProcedure
+
+	ITItxt.EndOfProcedure
+
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOnsetDelay, Photoslide.OnsetDelay
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOnsetTime, Photoslide.OnsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameDurationError, Photoslide.DurationError
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNamePreRelease, Photoslide.PreRelease
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameDuration, Photoslide.Duration
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameStartTime, Photoslide.StartTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOffsetTime, Photoslide.OffsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameFinishTime, Photoslide.FinishTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameTimingMode, Photoslide.TimingMode
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameCustomOnsetTime, Photoslide.CustomOnsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameCustomOffsetTime, Photoslide.CustomOffsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameActionDelay, Photoslide.ActionDelay
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameActionTime, Photoslide.ActionTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameTargetOffsetTime, Photoslide.TargetOffsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameTargetOnsetTime, Photoslide.TargetOnsetTime
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOffsetDelay, Photoslide.OffsetDelay
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameTag, Photoslide.Tag
+	c.SetAttrib Photoslide.Name & ebDot & ebLogNameOnsetToOnsetTime, Photoslide.OnsetToOnsetTime
+	
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOnsetDelay, Questionslide.OnsetDelay
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOnsetTime, Questionslide.OnsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameDurationError, Questionslide.DurationError
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNamePreRelease, Questionslide.PreRelease
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameDuration, Questionslide.Duration
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameStartTime, Questionslide.StartTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOffsetTime, Questionslide.OffsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameFinishTime, Questionslide.FinishTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameTimingMode, Questionslide.TimingMode
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameCustomOnsetTime, Questionslide.CustomOnsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameCustomOffsetTime, Questionslide.CustomOffsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameActionDelay, Questionslide.ActionDelay
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameActionTime, Questionslide.ActionTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameTargetOffsetTime, Questionslide.TargetOffsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameTargetOnsetTime, Questionslide.TargetOnsetTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOffsetDelay, Questionslide.OffsetDelay
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameRTTime, Questionslide.RTTime
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameRT, Questionslide.RT
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameRESP, Questionslide.RESP
+	c.SetAttrib Questionslide.Name & ebDot & ebLogNameOnsetToOnsetTime, Questionslide.OnsetToOnsetTime
+	
+
+	c.Log
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+End Sub
+
+Sub run1proc_Run(c As Context)
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	
+	
+	
+	Instructions.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		InstructionsEchoClients.RemoveAll
+		Instructions.InputMasks.Add Keyboard.CreateInputMask(ebDigit_5, ebEmptyText, CLng("-" & ebDigit_1), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Instructions.Run
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetDelay, Instructions.OnsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetTime, Instructions.OnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDurationError, Instructions.DurationError
+	c.SetAttrib Instructions.Name & ebDot & ebLogNamePreRelease, Instructions.PreRelease
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDuration, Instructions.Duration
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameStartTime, Instructions.StartTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetTime, Instructions.OffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameFinishTime, Instructions.FinishTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTimingMode, Instructions.TimingMode
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOnsetTime, Instructions.CustomOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOffsetTime, Instructions.CustomOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionDelay, Instructions.ActionDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionTime, Instructions.ActionTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOffsetTime, Instructions.TargetOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOnsetTime, Instructions.TargetOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetDelay, Instructions.OffsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetToOnsetTime, Instructions.OnsetToOnsetTime
+	
+	
+	
+	
+	Fixationtxt.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		FixationtxtEchoClients.RemoveAll
+		Fixationtxt.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Fixationtxt.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Fixationtxt.Run
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt.OnsetDelay
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOnsetTime, Fixationtxt.OnsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameDurationError, Fixationtxt.DurationError
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNamePreRelease, Fixationtxt.PreRelease
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameDuration, Fixationtxt.Duration
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameStartTime, Fixationtxt.StartTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOffsetTime, Fixationtxt.OffsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameFinishTime, Fixationtxt.FinishTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameTimingMode, Fixationtxt.TimingMode
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt.CustomOnsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt.CustomOffsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameActionDelay, Fixationtxt.ActionDelay
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameActionTime, Fixationtxt.ActionTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt.TargetOffsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt.TargetOnsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt.OffsetDelay
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt.OnsetToOnsetTime
+	
+		RunOrder1.Run c
+	
+	
+	
+	Fixationtxt1.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		Fixationtxt1EchoClients.RemoveAll
+		Fixationtxt1.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Fixationtxt1.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Fixationtxt1.Run
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt1.OnsetDelay
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOnsetTime, Fixationtxt1.OnsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameDurationError, Fixationtxt1.DurationError
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNamePreRelease, Fixationtxt1.PreRelease
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameDuration, Fixationtxt1.Duration
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameStartTime, Fixationtxt1.StartTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOffsetTime, Fixationtxt1.OffsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameFinishTime, Fixationtxt1.FinishTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameTimingMode, Fixationtxt1.TimingMode
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt1.CustomOnsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt1.CustomOffsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameActionDelay, Fixationtxt1.ActionDelay
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameActionTime, Fixationtxt1.ActionTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt1.TargetOffsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt1.TargetOnsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt1.OffsetDelay
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameRTTime, Fixationtxt1.RTTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameRT, Fixationtxt1.RT
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameRESP, Fixationtxt1.RESP
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt1.OnsetToOnsetTime
+	
+	'''''''''''''''''''''''''''''''''''''''''''''
+	'End Of Procedure Clean-Up
+	'''''''''''''''''''''''''''''''''''''''''''''
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	Instructions.EndOfProcedure
+
+	Fixationtxt.EndOfProcedure
+
+	Fixationtxt1.EndOfProcedure
+
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetDelay, Instructions.OnsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetTime, Instructions.OnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDurationError, Instructions.DurationError
+	c.SetAttrib Instructions.Name & ebDot & ebLogNamePreRelease, Instructions.PreRelease
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDuration, Instructions.Duration
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameStartTime, Instructions.StartTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetTime, Instructions.OffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameFinishTime, Instructions.FinishTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTimingMode, Instructions.TimingMode
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOnsetTime, Instructions.CustomOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOffsetTime, Instructions.CustomOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionDelay, Instructions.ActionDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionTime, Instructions.ActionTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOffsetTime, Instructions.TargetOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOnsetTime, Instructions.TargetOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetDelay, Instructions.OffsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetToOnsetTime, Instructions.OnsetToOnsetTime
+	
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt.OnsetDelay
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOnsetTime, Fixationtxt.OnsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameDurationError, Fixationtxt.DurationError
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNamePreRelease, Fixationtxt.PreRelease
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameDuration, Fixationtxt.Duration
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameStartTime, Fixationtxt.StartTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOffsetTime, Fixationtxt.OffsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameFinishTime, Fixationtxt.FinishTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameTimingMode, Fixationtxt.TimingMode
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt.CustomOnsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt.CustomOffsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameActionDelay, Fixationtxt.ActionDelay
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameActionTime, Fixationtxt.ActionTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt.TargetOffsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt.TargetOnsetTime
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt.OffsetDelay
+	c.SetAttrib Fixationtxt.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt.OnsetToOnsetTime
+	
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt1.OnsetDelay
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOnsetTime, Fixationtxt1.OnsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameDurationError, Fixationtxt1.DurationError
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNamePreRelease, Fixationtxt1.PreRelease
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameDuration, Fixationtxt1.Duration
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameStartTime, Fixationtxt1.StartTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOffsetTime, Fixationtxt1.OffsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameFinishTime, Fixationtxt1.FinishTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameTimingMode, Fixationtxt1.TimingMode
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt1.CustomOnsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt1.CustomOffsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameActionDelay, Fixationtxt1.ActionDelay
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameActionTime, Fixationtxt1.ActionTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt1.TargetOffsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt1.TargetOnsetTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt1.OffsetDelay
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameRTTime, Fixationtxt1.RTTime
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameRT, Fixationtxt1.RT
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameRESP, Fixationtxt1.RESP
+	c.SetAttrib Fixationtxt1.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt1.OnsetToOnsetTime
+	
+
+	c.Log
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+End Sub
+
+Sub run2proc_Run(c As Context)
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	
+	
+	
+	Instructions.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		InstructionsEchoClients.RemoveAll
+		Instructions.InputMasks.Add Keyboard.CreateInputMask(ebDigit_5, ebEmptyText, CLng("-" & ebDigit_1), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Instructions.Run
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetDelay, Instructions.OnsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetTime, Instructions.OnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDurationError, Instructions.DurationError
+	c.SetAttrib Instructions.Name & ebDot & ebLogNamePreRelease, Instructions.PreRelease
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDuration, Instructions.Duration
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameStartTime, Instructions.StartTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetTime, Instructions.OffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameFinishTime, Instructions.FinishTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTimingMode, Instructions.TimingMode
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOnsetTime, Instructions.CustomOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOffsetTime, Instructions.CustomOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionDelay, Instructions.ActionDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionTime, Instructions.ActionTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOffsetTime, Instructions.TargetOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOnsetTime, Instructions.TargetOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetDelay, Instructions.OffsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetToOnsetTime, Instructions.OnsetToOnsetTime
+	
+	
+	
+	
+	Fixationtxt2.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		Fixationtxt2EchoClients.RemoveAll
+		Fixationtxt2.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Fixationtxt2.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Fixationtxt2.Run
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt2.OnsetDelay
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOnsetTime, Fixationtxt2.OnsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameDurationError, Fixationtxt2.DurationError
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNamePreRelease, Fixationtxt2.PreRelease
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameDuration, Fixationtxt2.Duration
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameStartTime, Fixationtxt2.StartTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOffsetTime, Fixationtxt2.OffsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameFinishTime, Fixationtxt2.FinishTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameTimingMode, Fixationtxt2.TimingMode
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt2.CustomOnsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt2.CustomOffsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameActionDelay, Fixationtxt2.ActionDelay
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameActionTime, Fixationtxt2.ActionTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt2.TargetOffsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt2.TargetOnsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt2.OffsetDelay
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt2.OnsetToOnsetTime
+	
+		RunOrder2.Run c
+	
+	
+	
+	Fixationtxt3.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		Fixationtxt3EchoClients.RemoveAll
+		Fixationtxt3.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Fixationtxt3.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Fixationtxt3.Run
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt3.OnsetDelay
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOnsetTime, Fixationtxt3.OnsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameDurationError, Fixationtxt3.DurationError
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNamePreRelease, Fixationtxt3.PreRelease
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameDuration, Fixationtxt3.Duration
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameStartTime, Fixationtxt3.StartTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOffsetTime, Fixationtxt3.OffsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameFinishTime, Fixationtxt3.FinishTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameTimingMode, Fixationtxt3.TimingMode
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt3.CustomOnsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt3.CustomOffsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameActionDelay, Fixationtxt3.ActionDelay
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameActionTime, Fixationtxt3.ActionTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt3.TargetOffsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt3.TargetOnsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt3.OffsetDelay
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameRTTime, Fixationtxt3.RTTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameRT, Fixationtxt3.RT
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameRESP, Fixationtxt3.RESP
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt3.OnsetToOnsetTime
+	
+	'''''''''''''''''''''''''''''''''''''''''''''
+	'End Of Procedure Clean-Up
+	'''''''''''''''''''''''''''''''''''''''''''''
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	Instructions.EndOfProcedure
+
+	Fixationtxt2.EndOfProcedure
+
+	Fixationtxt3.EndOfProcedure
+
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetDelay, Instructions.OnsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetTime, Instructions.OnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDurationError, Instructions.DurationError
+	c.SetAttrib Instructions.Name & ebDot & ebLogNamePreRelease, Instructions.PreRelease
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDuration, Instructions.Duration
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameStartTime, Instructions.StartTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetTime, Instructions.OffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameFinishTime, Instructions.FinishTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTimingMode, Instructions.TimingMode
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOnsetTime, Instructions.CustomOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOffsetTime, Instructions.CustomOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionDelay, Instructions.ActionDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionTime, Instructions.ActionTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOffsetTime, Instructions.TargetOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOnsetTime, Instructions.TargetOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetDelay, Instructions.OffsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetToOnsetTime, Instructions.OnsetToOnsetTime
+	
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt2.OnsetDelay
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOnsetTime, Fixationtxt2.OnsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameDurationError, Fixationtxt2.DurationError
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNamePreRelease, Fixationtxt2.PreRelease
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameDuration, Fixationtxt2.Duration
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameStartTime, Fixationtxt2.StartTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOffsetTime, Fixationtxt2.OffsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameFinishTime, Fixationtxt2.FinishTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameTimingMode, Fixationtxt2.TimingMode
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt2.CustomOnsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt2.CustomOffsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameActionDelay, Fixationtxt2.ActionDelay
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameActionTime, Fixationtxt2.ActionTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt2.TargetOffsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt2.TargetOnsetTime
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt2.OffsetDelay
+	c.SetAttrib Fixationtxt2.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt2.OnsetToOnsetTime
+	
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt3.OnsetDelay
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOnsetTime, Fixationtxt3.OnsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameDurationError, Fixationtxt3.DurationError
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNamePreRelease, Fixationtxt3.PreRelease
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameDuration, Fixationtxt3.Duration
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameStartTime, Fixationtxt3.StartTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOffsetTime, Fixationtxt3.OffsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameFinishTime, Fixationtxt3.FinishTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameTimingMode, Fixationtxt3.TimingMode
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt3.CustomOnsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt3.CustomOffsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameActionDelay, Fixationtxt3.ActionDelay
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameActionTime, Fixationtxt3.ActionTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt3.TargetOffsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt3.TargetOnsetTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt3.OffsetDelay
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameRTTime, Fixationtxt3.RTTime
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameRT, Fixationtxt3.RT
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameRESP, Fixationtxt3.RESP
+	c.SetAttrib Fixationtxt3.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt3.OnsetToOnsetTime
+	
+
+	c.Log
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+End Sub
+
+Sub run3proc_Run(c As Context)
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	
+	
+	
+	Instructions.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		InstructionsEchoClients.RemoveAll
+		Instructions.InputMasks.Add Keyboard.CreateInputMask(ebDigit_5, ebEmptyText, CLng("-" & ebDigit_1), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Instructions.Run
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetDelay, Instructions.OnsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetTime, Instructions.OnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDurationError, Instructions.DurationError
+	c.SetAttrib Instructions.Name & ebDot & ebLogNamePreRelease, Instructions.PreRelease
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDuration, Instructions.Duration
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameStartTime, Instructions.StartTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetTime, Instructions.OffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameFinishTime, Instructions.FinishTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTimingMode, Instructions.TimingMode
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOnsetTime, Instructions.CustomOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOffsetTime, Instructions.CustomOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionDelay, Instructions.ActionDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionTime, Instructions.ActionTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOffsetTime, Instructions.TargetOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOnsetTime, Instructions.TargetOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetDelay, Instructions.OffsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetToOnsetTime, Instructions.OnsetToOnsetTime
+	
+	
+	
+	
+	Fixationtxt4.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		Fixationtxt4EchoClients.RemoveAll
+		Fixationtxt4.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Fixationtxt4.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Fixationtxt4.Run
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt4.OnsetDelay
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOnsetTime, Fixationtxt4.OnsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameDurationError, Fixationtxt4.DurationError
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNamePreRelease, Fixationtxt4.PreRelease
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameDuration, Fixationtxt4.Duration
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameStartTime, Fixationtxt4.StartTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOffsetTime, Fixationtxt4.OffsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameFinishTime, Fixationtxt4.FinishTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameTimingMode, Fixationtxt4.TimingMode
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt4.CustomOnsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt4.CustomOffsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameActionDelay, Fixationtxt4.ActionDelay
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameActionTime, Fixationtxt4.ActionTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt4.TargetOffsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt4.TargetOnsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt4.OffsetDelay
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt4.OnsetToOnsetTime
+	
+		RunOrder3.Run c
+	
+	
+	
+	Fixationtxt5.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		Fixationtxt5EchoClients.RemoveAll
+		Fixationtxt5.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Fixationtxt5.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Fixationtxt5.Run
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt5.OnsetDelay
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOnsetTime, Fixationtxt5.OnsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameDurationError, Fixationtxt5.DurationError
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNamePreRelease, Fixationtxt5.PreRelease
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameDuration, Fixationtxt5.Duration
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameStartTime, Fixationtxt5.StartTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOffsetTime, Fixationtxt5.OffsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameFinishTime, Fixationtxt5.FinishTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameTimingMode, Fixationtxt5.TimingMode
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt5.CustomOnsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt5.CustomOffsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameActionDelay, Fixationtxt5.ActionDelay
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameActionTime, Fixationtxt5.ActionTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt5.TargetOffsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt5.TargetOnsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt5.OffsetDelay
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameRTTime, Fixationtxt5.RTTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameRT, Fixationtxt5.RT
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameRESP, Fixationtxt5.RESP
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt5.OnsetToOnsetTime
+	
+	'''''''''''''''''''''''''''''''''''''''''''''
+	'End Of Procedure Clean-Up
+	'''''''''''''''''''''''''''''''''''''''''''''
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	Instructions.EndOfProcedure
+
+	Fixationtxt4.EndOfProcedure
+
+	Fixationtxt5.EndOfProcedure
+
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetDelay, Instructions.OnsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetTime, Instructions.OnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDurationError, Instructions.DurationError
+	c.SetAttrib Instructions.Name & ebDot & ebLogNamePreRelease, Instructions.PreRelease
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDuration, Instructions.Duration
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameStartTime, Instructions.StartTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetTime, Instructions.OffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameFinishTime, Instructions.FinishTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTimingMode, Instructions.TimingMode
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOnsetTime, Instructions.CustomOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOffsetTime, Instructions.CustomOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionDelay, Instructions.ActionDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionTime, Instructions.ActionTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOffsetTime, Instructions.TargetOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOnsetTime, Instructions.TargetOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetDelay, Instructions.OffsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetToOnsetTime, Instructions.OnsetToOnsetTime
+	
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt4.OnsetDelay
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOnsetTime, Fixationtxt4.OnsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameDurationError, Fixationtxt4.DurationError
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNamePreRelease, Fixationtxt4.PreRelease
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameDuration, Fixationtxt4.Duration
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameStartTime, Fixationtxt4.StartTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOffsetTime, Fixationtxt4.OffsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameFinishTime, Fixationtxt4.FinishTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameTimingMode, Fixationtxt4.TimingMode
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt4.CustomOnsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt4.CustomOffsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameActionDelay, Fixationtxt4.ActionDelay
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameActionTime, Fixationtxt4.ActionTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt4.TargetOffsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt4.TargetOnsetTime
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt4.OffsetDelay
+	c.SetAttrib Fixationtxt4.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt4.OnsetToOnsetTime
+	
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt5.OnsetDelay
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOnsetTime, Fixationtxt5.OnsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameDurationError, Fixationtxt5.DurationError
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNamePreRelease, Fixationtxt5.PreRelease
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameDuration, Fixationtxt5.Duration
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameStartTime, Fixationtxt5.StartTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOffsetTime, Fixationtxt5.OffsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameFinishTime, Fixationtxt5.FinishTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameTimingMode, Fixationtxt5.TimingMode
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt5.CustomOnsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt5.CustomOffsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameActionDelay, Fixationtxt5.ActionDelay
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameActionTime, Fixationtxt5.ActionTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt5.TargetOffsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt5.TargetOnsetTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt5.OffsetDelay
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameRTTime, Fixationtxt5.RTTime
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameRT, Fixationtxt5.RT
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameRESP, Fixationtxt5.RESP
+	c.SetAttrib Fixationtxt5.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt5.OnsetToOnsetTime
+	
+
+	c.Log
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+End Sub
+
+Sub run4proc_Run(c As Context)
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Start:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_StartResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_StartResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Start END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	
+	
+	
+	Instructions.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		InstructionsEchoClients.RemoveAll
+		Instructions.InputMasks.Add Keyboard.CreateInputMask(ebDigit_5, ebEmptyText, CLng("-" & ebDigit_1), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Instructions.Run
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetDelay, Instructions.OnsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetTime, Instructions.OnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDurationError, Instructions.DurationError
+	c.SetAttrib Instructions.Name & ebDot & ebLogNamePreRelease, Instructions.PreRelease
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDuration, Instructions.Duration
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameStartTime, Instructions.StartTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetTime, Instructions.OffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameFinishTime, Instructions.FinishTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTimingMode, Instructions.TimingMode
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOnsetTime, Instructions.CustomOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOffsetTime, Instructions.CustomOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionDelay, Instructions.ActionDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionTime, Instructions.ActionTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOffsetTime, Instructions.TargetOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOnsetTime, Instructions.TargetOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetDelay, Instructions.OffsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetToOnsetTime, Instructions.OnsetToOnsetTime
+	
+	
+	
+	
+	Fixationtxt6.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		Fixationtxt6EchoClients.RemoveAll
+		Fixationtxt6.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Fixationtxt6.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Fixationtxt6.Run
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt6.OnsetDelay
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOnsetTime, Fixationtxt6.OnsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameDurationError, Fixationtxt6.DurationError
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNamePreRelease, Fixationtxt6.PreRelease
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameDuration, Fixationtxt6.Duration
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameStartTime, Fixationtxt6.StartTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOffsetTime, Fixationtxt6.OffsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameFinishTime, Fixationtxt6.FinishTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameTimingMode, Fixationtxt6.TimingMode
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt6.CustomOnsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt6.CustomOffsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameActionDelay, Fixationtxt6.ActionDelay
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameActionTime, Fixationtxt6.ActionTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt6.TargetOffsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt6.TargetOnsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt6.OffsetDelay
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt6.OnsetToOnsetTime
+	
+		RunOrder4.Run c
+	
+	
+	
+	Fixationtxt7.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		Fixationtxt7EchoClients.RemoveAll
+		Fixationtxt7.InputMasks.Add Keyboard.CreateInputMask(ebLCase_q, ebEmptyText, CLng(Fixationtxt7.Duration), CLng(ebDigit_1), ebEndResponseActionTerminate, CLogical(ebUCase_Y & ebLCase_e & ebLCase_s), ebEmptyText, ebEmptyText, "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Fixationtxt7.Run
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt7.OnsetDelay
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOnsetTime, Fixationtxt7.OnsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameDurationError, Fixationtxt7.DurationError
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNamePreRelease, Fixationtxt7.PreRelease
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameDuration, Fixationtxt7.Duration
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameStartTime, Fixationtxt7.StartTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOffsetTime, Fixationtxt7.OffsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameFinishTime, Fixationtxt7.FinishTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameTimingMode, Fixationtxt7.TimingMode
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt7.CustomOnsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt7.CustomOffsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameActionDelay, Fixationtxt7.ActionDelay
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameActionTime, Fixationtxt7.ActionTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt7.TargetOffsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt7.TargetOnsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt7.OffsetDelay
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameRTTime, Fixationtxt7.RTTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameRT, Fixationtxt7.RT
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameRESP, Fixationtxt7.RESP
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt7.OnsetToOnsetTime
+	
+	'''''''''''''''''''''''''''''''''''''''''''''
+	'End Of Procedure Clean-Up
+	'''''''''''''''''''''''''''''''''''''''''''''
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Timeline_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_Timeline_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_Timeline_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Timeline_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+	Instructions.EndOfProcedure
+
+	Fixationtxt6.EndOfProcedure
+
+	Fixationtxt7.EndOfProcedure
+
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetDelay, Instructions.OnsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetTime, Instructions.OnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDurationError, Instructions.DurationError
+	c.SetAttrib Instructions.Name & ebDot & ebLogNamePreRelease, Instructions.PreRelease
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameDuration, Instructions.Duration
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameStartTime, Instructions.StartTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetTime, Instructions.OffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameFinishTime, Instructions.FinishTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTimingMode, Instructions.TimingMode
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOnsetTime, Instructions.CustomOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameCustomOffsetTime, Instructions.CustomOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionDelay, Instructions.ActionDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameActionTime, Instructions.ActionTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOffsetTime, Instructions.TargetOffsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameTargetOnsetTime, Instructions.TargetOnsetTime
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOffsetDelay, Instructions.OffsetDelay
+	c.SetAttrib Instructions.Name & ebDot & ebLogNameOnsetToOnsetTime, Instructions.OnsetToOnsetTime
+	
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt6.OnsetDelay
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOnsetTime, Fixationtxt6.OnsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameDurationError, Fixationtxt6.DurationError
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNamePreRelease, Fixationtxt6.PreRelease
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameDuration, Fixationtxt6.Duration
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameStartTime, Fixationtxt6.StartTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOffsetTime, Fixationtxt6.OffsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameFinishTime, Fixationtxt6.FinishTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameTimingMode, Fixationtxt6.TimingMode
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt6.CustomOnsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt6.CustomOffsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameActionDelay, Fixationtxt6.ActionDelay
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameActionTime, Fixationtxt6.ActionTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt6.TargetOffsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt6.TargetOnsetTime
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt6.OffsetDelay
+	c.SetAttrib Fixationtxt6.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt6.OnsetToOnsetTime
+	
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOnsetDelay, Fixationtxt7.OnsetDelay
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOnsetTime, Fixationtxt7.OnsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameDurationError, Fixationtxt7.DurationError
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNamePreRelease, Fixationtxt7.PreRelease
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameDuration, Fixationtxt7.Duration
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameStartTime, Fixationtxt7.StartTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOffsetTime, Fixationtxt7.OffsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameFinishTime, Fixationtxt7.FinishTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameTimingMode, Fixationtxt7.TimingMode
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameCustomOnsetTime, Fixationtxt7.CustomOnsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameCustomOffsetTime, Fixationtxt7.CustomOffsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameActionDelay, Fixationtxt7.ActionDelay
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameActionTime, Fixationtxt7.ActionTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameTargetOffsetTime, Fixationtxt7.TargetOffsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameTargetOnsetTime, Fixationtxt7.TargetOnsetTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOffsetDelay, Fixationtxt7.OffsetDelay
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameRTTime, Fixationtxt7.RTTime
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameRT, Fixationtxt7.RT
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameRESP, Fixationtxt7.RESP
+	c.SetAttrib Fixationtxt7.Name & ebDot & ebLogNameOnsetToOnsetTime, Fixationtxt7.OnsetToOnsetTime
+	
+
+	c.Log
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Procedure_Finish:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume Procedure_FinishResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+Procedure_FinishResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - Procedure_Finish END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+End Sub
+
+
+
+'--------------------------------------------------------------------------
+' InitDevices
+'
+'--------------------------------------------------------------------------
+Sub InitDevices(c As Context)
+
+
+	Set Display = New DisplayDevice
+	Display.Name = ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y
+
+	Dim DisplayDisplayDeviceInfo As DisplayDeviceInfo
+	DisplayDisplayDeviceInfo.XRes = 1366
+	DisplayDisplayDeviceInfo.YRes = 768
+	DisplayDisplayDeviceInfo.ColorDepth = 32
+	DisplayDisplayDeviceInfo.DisplayIndex = 1
+	DisplayDisplayDeviceInfo.UseDesktopSettings = True
+	DisplayDisplayDeviceInfo.DefaultColor = Color.White
+	DisplayDisplayDeviceInfo.RefreshRateRequested = 0
+	DisplayDisplayDeviceInfo.NumPages = 0
+	
+	'Load values from context if they exist
+	If c.AttribExists(Display.Name & ebDot & ebUCase_X & ebUCase_R & ebLCase_e & ebLCase_s) Then DisplayDisplayDeviceInfo.XRes = CLng(c.GetAttrib(Display.Name & ebDot & ebUCase_X & ebUCase_R & ebLCase_e & ebLCase_s))
+	If c.AttribExists(Display.Name & ebDot & ebUCase_Y & ebUCase_R & ebLCase_e & ebLCase_s) Then DisplayDisplayDeviceInfo.YRes = CLng(c.GetAttrib(Display.Name & ebDot & ebUCase_Y & ebUCase_R & ebLCase_e & ebLCase_s))
+	If c.AttribExists(Display.Name & ebDot & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_o & ebLCase_r & ebUCase_D & ebLCase_e & ebLCase_p & ebLCase_t & ebLCase_h) Then DisplayDisplayDeviceInfo.ColorDepth = CLng(c.GetAttrib(Display.Name & ebDot & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_o & ebLCase_r & ebUCase_D & ebLCase_e & ebLCase_p & ebLCase_t & ebLCase_h))
+	If c.AttribExists(Display.Name & ebDot & ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebUCase_I & ebLCase_n & ebLCase_d & ebLCase_e & ebLCase_x) Then DisplayDisplayDeviceInfo.DisplayIndex = CLng(c.GetAttrib(Display.Name & ebDot & ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebUCase_I & ebLCase_n & ebLCase_d & ebLCase_e & ebLCase_x))
+	If c.AttribExists(Display.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_f & ebLCase_a & ebLCase_u & ebLCase_l & ebLCase_t & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_o & ebLCase_r) Then DisplayDisplayDeviceInfo.DefaultColor = CColor(c.GetAttrib(Display.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_f & ebLCase_a & ebLCase_u & ebLCase_l & ebLCase_t & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_o & ebLCase_r))
+	If c.AttribExists(Display.Name & ebDot & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_q & ebLCase_u & ebLCase_e & ebLCase_s & ebLCase_t & ebLCase_e & ebLCase_d) Then DisplayDisplayDeviceInfo.RefreshRateRequested = CLng(c.GetAttrib(Display.Name & ebDot & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_q & ebLCase_u & ebLCase_e & ebLCase_s & ebLCase_t & ebLCase_e & ebLCase_d))
+	If c.AttribExists(Display.Name & ebDot & ebUCase_N & ebLCase_u & ebLCase_m & ebUCase_P & ebLCase_a & ebLCase_g & ebLCase_e & ebLCase_s) Then DisplayDisplayDeviceInfo.NumPages = CLng(c.GetAttrib(Display.Name & ebDot & ebUCase_N & ebLCase_u & ebLCase_m & ebUCase_P & ebLCase_a & ebLCase_g & ebLCase_e & ebLCase_s))
+	If c.AttribExists(Display.Name & ebDot & ebUCase_U & ebLCase_s & ebLCase_e & ebUCase_D & ebLCase_e & ebLCase_s & ebLCase_k & ebLCase_t & ebLCase_o & ebLCase_p & ebUCase_S & ebLCase_e & ebLCase_t & ebLCase_t & ebLCase_i & ebLCase_n & ebLCase_g & ebLCase_s) Then DisplayDisplayDeviceInfo.UseDesktopSettings = CLogical(c.GetAttrib(Display.Name & ebDot & ebUCase_U & ebLCase_s & ebLCase_e & ebUCase_D & ebLCase_e & ebLCase_s & ebLCase_k & ebLCase_t & ebLCase_o & ebLCase_p & ebUCase_S & ebLCase_e & ebLCase_t & ebLCase_t & ebLCase_i & ebLCase_n & ebLCase_g & ebLCase_s))
+	
+	'Open the device, unless the context values indicate otherwise
+	Dim DisplayOpen As Boolean
+	DisplayOpen = True
+	If c.AttribExists(Display.Name & ebDot & ebUCase_O & ebLCase_p & ebLCase_e & ebLCase_n) Then DisplayOpen = CLogical(c.GetAttrib(Display.Name & ebDot & ebUCase_O & ebLCase_p & ebLCase_e & ebLCase_n))
+	If DisplayOpen = True Then
+		Display.Open DisplayDisplayDeviceInfo
+		Display.RefreshAlignment = ebDigit_0 & ebPercent
+		If c.AttribExists(Display.Name & ebDot & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_A & ebLCase_l & ebLCase_i & ebLCase_g & ebLCase_n & ebLCase_m & ebLCase_e & ebLCase_n & ebLCase_t) Then Display.RefreshAlignment = c.GetAttrib(Display.Name & ebDot & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_A & ebLCase_l & ebLCase_i & ebLCase_g & ebLCase_n & ebLCase_m & ebLCase_e & ebLCase_n & ebLCase_t)
+	End If
+
+	'Enable flipping, if requested
+	If c.AttribExists(Display.Name & ebDot & ebUCase_F & ebLCase_l & ebLCase_i & ebLCase_p & ebLCase_p & ebLCase_i & ebLCase_n & ebLCase_g & ebUCase_E & ebLCase_n & ebLCase_a & ebLCase_b & ebLCase_l & ebLCase_e & ebLCase_d) Then
+		Display.FlippingEnabled = CLogical(c.GetAttrib(Display.Name & ebDot & ebUCase_F & ebLCase_l & ebLCase_i & ebLCase_p & ebLCase_p & ebLCase_i & ebLCase_n & ebLCase_g & ebUCase_E & ebLCase_n & ebLCase_a & ebLCase_b & ebLCase_l & ebLCase_e & ebLCase_d))
+	Else
+		Display.FlippingEnabled = False
+	End If
+
+	Set Sound = New SoundDevice
+	Sound.Name = ebUCase_S & ebLCase_o & ebLCase_u & ebLCase_n & ebLCase_d
+
+	Dim SoundSoundDeviceInfo As SoundDeviceInfo
+	SoundSoundDeviceInfo.API = ebSoundApiDirectSound
+	SoundSoundDeviceInfo.DeviceIndex = 1
+	SoundSoundDeviceInfo.Channels = 0
+	SoundSoundDeviceInfo.SamplesPerSecond = 0
+	SoundSoundDeviceInfo.BitsPerSample = 0
+	SoundSoundDeviceInfo.DeviceReserved1 = 0
+	SoundSoundDeviceInfo.DeviceReserved2 = 0
+	SoundSoundDeviceInfo.DeviceReserved3 = 0
+	SoundSoundDeviceInfo.DeviceReserved4 = 0
+	SoundSoundDeviceInfo.DeviceReservedA = ebEmptyText
+	SoundSoundDeviceInfo.DeviceReservedB = ebEmptyText
+	SoundSoundDeviceInfo.DeviceReservedC = ebEmptyText
+	SoundSoundDeviceInfo.DeviceReservedD = ebEmptyText
+
+	'Load values from context if they exist
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_A & ebUCase_P & ebUCase_I) Then SoundSoundDeviceInfo.API = c.GetAttrib(Sound.Name & ebDot & ebUCase_A & ebUCase_P & ebUCase_I)
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_I & ebLCase_n & ebLCase_d & ebLCase_e & ebLCase_x) Then SoundSoundDeviceInfo.DeviceIndex = CLng(c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_I & ebLCase_n & ebLCase_d & ebLCase_e & ebLCase_x))
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_C & ebLCase_h & ebLCase_a & ebLCase_n & ebLCase_n & ebLCase_e & ebLCase_l & ebLCase_s) Then SoundSoundDeviceInfo.Channels = CLng(c.GetAttrib(Sound.Name & ebDot & ebUCase_C & ebLCase_h & ebLCase_a & ebLCase_n & ebLCase_n & ebLCase_e & ebLCase_l & ebLCase_s))
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_S & ebLCase_a & ebLCase_m & ebLCase_p & ebLCase_l & ebLCase_e & ebLCase_s & ebUCase_P & ebLCase_e & ebLCase_r & ebUCase_S & ebLCase_e & ebLCase_c & ebLCase_o & ebLCase_n & ebLCase_d) Then SoundSoundDeviceInfo.SamplesPerSecond = CLng(c.GetAttrib(Sound.Name & ebDot & ebUCase_S & ebLCase_a & ebLCase_m & ebLCase_p & ebLCase_l & ebLCase_e & ebLCase_s & ebUCase_P & ebLCase_e & ebLCase_r & ebUCase_S & ebLCase_e & ebLCase_c & ebLCase_o & ebLCase_n & ebLCase_d))
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_B & ebLCase_i & ebLCase_t & ebLCase_s & ebUCase_P & ebLCase_e & ebLCase_r & ebUCase_S & ebLCase_a & ebLCase_m & ebLCase_p & ebLCase_l & ebLCase_e) Then SoundSoundDeviceInfo.BitsPerSample = CLng(c.GetAttrib(Sound.Name & ebDot & ebUCase_B & ebLCase_i & ebLCase_t & ebLCase_s & ebUCase_P & ebLCase_e & ebLCase_r & ebUCase_S & ebLCase_a & ebLCase_m & ebLCase_p & ebLCase_l & ebLCase_e))
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebDigit_1) Then SoundSoundDeviceInfo.DeviceReserved1 = CLng(c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebDigit_1))
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebDigit_2) Then SoundSoundDeviceInfo.DeviceReserved2 = CLng(c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebDigit_2))
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebDigit_3) Then SoundSoundDeviceInfo.DeviceReserved3 = CLng(c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebDigit_3))
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebDigit_4) Then SoundSoundDeviceInfo.DeviceReserved4 = CLng(c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebDigit_4))
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebUCase_A) Then SoundSoundDeviceInfo.DeviceReservedA = c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebUCase_A)
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebUCase_B) Then SoundSoundDeviceInfo.DeviceReservedB = c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebUCase_B)
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebUCase_C) Then SoundSoundDeviceInfo.DeviceReservedC = c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebUCase_C)
+	If c.AttribExists(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebUCase_D) Then SoundSoundDeviceInfo.DeviceReservedD = c.GetAttrib(Sound.Name & ebDot & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_R & ebLCase_e & ebLCase_s & ebLCase_e & ebLCase_r & ebLCase_v & ebLCase_e & ebLCase_d & ebUCase_D)
+	
+	Set Keyboard = New KeyboardDevice
+	Keyboard.Name = ebUCase_K & ebLCase_e & ebLCase_y & ebLCase_b & ebLCase_o & ebLCase_a & ebLCase_r & ebLCase_d
+
+
+	Dim KeyboardKeyboardDeviceInfo As KeyboardDeviceInfo
+	KeyboardKeyboardDeviceInfo.CollectionMode = ebPressesOnly
+	KeyboardKeyboardDeviceInfo.CapsLock = ebCapsLockOff
+	KeyboardKeyboardDeviceInfo.NumLock = ebNumLockOn
+	'Load values from context if they exist
+	If c.AttribExists(Keyboard.Name & ebDot & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_l & ebLCase_e & ebLCase_c & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebUCase_M & ebLCase_o & ebLCase_d & ebLCase_e) Then KeyboardKeyboardDeviceInfo.CollectionMode = CLng(c.GetAttrib(Keyboard.Name & ebDot & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_l & ebLCase_e & ebLCase_c & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebUCase_M & ebLCase_o & ebLCase_d & ebLCase_e))
+	If c.AttribExists(Keyboard.Name & ebDot & ebUCase_C & ebLCase_a & ebLCase_p & ebLCase_s & ebUCase_L & ebLCase_o & ebLCase_c & ebLCase_k) Then KeyboardKeyboardDeviceInfo.CapsLock = CLng(c.GetAttrib(Keyboard.Name & ebDot & ebUCase_C & ebLCase_a & ebLCase_p & ebLCase_s & ebUCase_L & ebLCase_o & ebLCase_c & ebLCase_k))
+	If c.AttribExists(Keyboard.Name & ebDot & ebUCase_N & ebLCase_u & ebLCase_m & ebUCase_L & ebLCase_o & ebLCase_c & ebLCase_k) Then KeyboardKeyboardDeviceInfo.NumLock = CLng(c.GetAttrib(Keyboard.Name & ebDot & ebUCase_N & ebLCase_u & ebLCase_m & ebUCase_L & ebLCase_o & ebLCase_c & ebLCase_k))
+	If c.AttribExists(Keyboard.Name & ebDot & ebUCase_E & ebLCase_m & ebLCase_u & ebLCase_l & ebLCase_a & ebLCase_t & ebLCase_e & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_N & ebLCase_a & ebLCase_m & ebLCase_e) Then KeyboardKeyboardDeviceInfo.EmulateDeviceName = c.GetAttrib(Keyboard.Name & ebDot & ebUCase_E & ebLCase_m & ebLCase_u & ebLCase_l & ebLCase_a & ebLCase_t & ebLCase_e & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_N & ebLCase_a & ebLCase_m & ebLCase_e)
+	
+	'Open the device, unless the context values indicate otherwise
+	Dim KeyboardOpen As Boolean
+	KeyboardOpen = True
+	If c.AttribExists(Keyboard.Name & ebDot & ebUCase_O & ebLCase_p & ebLCase_e & ebLCase_n) Then KeyboardOpen = CLogical(c.GetAttrib(Keyboard.Name & ebDot & ebUCase_O & ebLCase_p & ebLCase_e & ebLCase_n))
+	If KeyboardOpen = True Then
+		Keyboard.Open KeyboardKeyboardDeviceInfo
+	End If
+
+	Set Mouse = New MouseDevice
+	Mouse.Name = ebUCase_M & ebLCase_o & ebLCase_u & ebLCase_s & ebLCase_e
+
+
+	Dim MouseMouseDeviceInfo As MouseDeviceInfo
+	MouseMouseDeviceInfo.OpenMode = ebMouseOpenModeDirect
+	MouseMouseDeviceInfo.CollectionMode = ebPressesOnly
+	MouseMouseDeviceInfo.ShowCursor = False
+	'Load values from context if they exist
+	If c.AttribExists(Mouse.Name & ebDot & ebUCase_O & ebLCase_p & ebLCase_e & ebLCase_n & ebUCase_M & ebLCase_o & ebLCase_d & ebLCase_e) Then MouseMouseDeviceInfo.OpenMode = CLng(c.GetAttrib(Mouse.Name & ebDot & ebUCase_O & ebLCase_p & ebLCase_e & ebLCase_n & ebUCase_M & ebLCase_o & ebLCase_d & ebLCase_e))
+	If c.AttribExists(Mouse.Name & ebDot & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_l & ebLCase_e & ebLCase_c & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebUCase_M & ebLCase_o & ebLCase_d & ebLCase_e) Then MouseMouseDeviceInfo.CollectionMode = CLng(c.GetAttrib(Mouse.Name & ebDot & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_l & ebLCase_e & ebLCase_c & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebUCase_M & ebLCase_o & ebLCase_d & ebLCase_e))
+	If c.AttribExists(Mouse.Name & ebDot & ebUCase_S & ebLCase_h & ebLCase_o & ebLCase_w & ebUCase_C & ebLCase_u & ebLCase_r & ebLCase_s & ebLCase_o & ebLCase_r) Then MouseMouseDeviceInfo.ShowCursor = CLng(c.GetAttrib(Mouse.Name & ebDot & ebUCase_S & ebLCase_h & ebLCase_o & ebLCase_w & ebUCase_C & ebLCase_u & ebLCase_r & ebLCase_s & ebLCase_o & ebLCase_r))
+	If c.AttribExists(Mouse.Name & ebDot & ebUCase_E & ebLCase_m & ebLCase_u & ebLCase_l & ebLCase_a & ebLCase_t & ebLCase_e & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_N & ebLCase_a & ebLCase_m & ebLCase_e) Then MouseMouseDeviceInfo.EmulateDeviceName = c.GetAttrib(Mouse.Name & ebDot & ebUCase_E & ebLCase_m & ebLCase_u & ebLCase_l & ebLCase_a & ebLCase_t & ebLCase_e & ebUCase_D & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebUCase_N & ebLCase_a & ebLCase_m & ebLCase_e)
+	
+	'Open the device, unless the context values indicate otherwise
+	Dim MouseOpen As Boolean
+	MouseOpen = True
+	If c.AttribExists(Mouse.Name & ebDot & ebUCase_O & ebLCase_p & ebLCase_e & ebLCase_n) Then MouseOpen = CLogical(c.GetAttrib(Mouse.Name & ebDot & ebUCase_O & ebLCase_p & ebLCase_e & ebLCase_n))
+	If MouseOpen = True Then
+		Mouse.Open MouseMouseDeviceInfo
+	End If
+
+	'Init All Devices
+	Rte.DeviceManager.Init
+
+	' Log DisplayDevice(s) Refresh Rates
+	If DisplayOpen = True Then
+		c.SetAttrib Display.Name & ebDot & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e, Format$(Display.CalculatedRefreshRate, ebDigit_0 & ebDot & ebDigit_0 & ebDigit_0 & ebDigit_0)
+
+		'Ensure that the refresh rate is acceptable
+		If CLng(Display.CalculatedRefreshRate) = 0 Then
+			'WARNING: RefreshRate of 0 (Zero) Detected.  Experiment will assume 60hz to continue. Data collection should NOT be used for time critical analysis.  Please ensure your display adapter is configured with the most recent and device specific driver.\n(Standard Display Adapter under Windows Vista or later is not compatible)
+			Dim strDisplayError As String
+			strDisplayError = ebUCase_W & ebUCase_A & ebUCase_R & ebUCase_N & ebUCase_I & ebUCase_N & ebUCase_G & ebColon & ebSpace & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e & ebSpace & ebLCase_o & ebLCase_f & ebSpace & ebDigit_0 & ebSpace & ebParenOpen & ebUCase_Z & ebLCase_e & ebLCase_r & ebLCase_o & ebParenClose & ebSpace & ebUCase_D & ebLCase_e & ebLCase_t & ebLCase_e & ebLCase_c & ebLCase_t & ebLCase_e & ebLCase_d & ebDot & ebSpace & ebSpace & ebUCase_E & ebLCase_x & ebLCase_p & ebLCase_e & ebLCase_r & ebLCase_i & ebLCase_m & ebLCase_e & ebLCase_n & ebLCase_t & ebSpace & ebLCase_w & ebLCase_i & ebLCase_l & ebLCase_l & ebSpace & ebLCase_a & ebLCase_s & ebLCase_s & ebLCase_u & ebLCase_m & ebLCase_e & ebSpace & ebDigit_6 & ebDigit_0 & ebLCase_h & ebLCase_z & ebSpace & ebLCase_t & ebLCase_o & ebSpace & ebLCase_c & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_i & ebLCase_n & ebLCase_u & ebLCase_e & ebDot & ebSpace & ebUCase_D & ebLCase_a & ebLCase_t & ebLCase_a & ebSpace & ebLCase_c & ebLCase_o & ebLCase_l & ebLCase_l & ebLCase_e & ebLCase_c & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebSpace & ebLCase_s & ebLCase_h & ebLCase_o & ebLCase_u & ebLCase_l & ebLCase_d & ebSpace & ebUCase_N & ebUCase_O & ebUCase_T & ebSpace & ebLCase_b & ebLCase_e & ebSpace & ebLCase_u & ebLCase_s & ebLCase_e & ebLCase_d & ebSpace & ebLCase_f & ebLCase_o & ebLCase_r & ebSpace & ebLCase_t & ebLCase_i & ebLCase_m & ebLCase_e & ebSpace & ebLCase_c & ebLCase_r & ebLCase_i & ebLCase_t & ebLCase_i & ebLCase_c & ebLCase_a & ebLCase_l & ebSpace & ebLCase_a & ebLCase_n & ebLCase_a & ebLCase_l & ebLCase_y & ebLCase_s & ebLCase_i & ebLCase_s & ebDot & ebSpace & ebSpace & ebUCase_P & ebLCase_l & ebLCase_e & ebLCase_a & ebLCase_s & ebLCase_e & ebSpace & ebLCase_e & ebLCase_n & ebLCase_s & ebLCase_u & ebLCase_r & ebLCase_e & ebSpace & ebLCase_y & ebLCase_o & ebLCase_u & ebLCase_r & ebSpace & ebLCase_d & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebSpace & ebLCase_a & ebLCase_d & ebLCase_a & ebLCase_p & ebLCase_t & ebLCase_e & ebLCase_r & ebSpace & ebLCase_i & ebLCase_s & ebSpace & ebLCase_c & ebLCase_o & ebLCase_n & ebLCase_f & ebLCase_i & ebLCase_g & ebLCase_u & ebLCase_r & ebLCase_e & ebLCase_d & ebSpace & ebLCase_w & ebLCase_i & ebLCase_t & ebLCase_h & ebSpace & ebLCase_t & ebLCase_h & ebLCase_e & ebSpace & ebLCase_m & ebLCase_o & ebLCase_s & ebLCase_t & ebSpace & ebLCase_r & ebLCase_e & ebLCase_c & ebLCase_e & ebLCase_n & ebLCase_t & ebSpace & ebLCase_a & ebLCase_n & ebLCase_d & ebSpace & ebLCase_d & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebSpace & ebLCase_s & ebLCase_p & ebLCase_e & ebLCase_c & ebLCase_i & ebLCase_f & ebLCase_i & ebLCase_c & ebSpace & ebLCase_d & ebLCase_r & ebLCase_i & ebLCase_v & ebLCase_e & ebLCase_r & ebDot & ebLf & ebParenOpen & ebUCase_S & ebLCase_t & ebLCase_a & ebLCase_n & ebLCase_d & ebLCase_a & ebLCase_r & ebLCase_d & ebSpace & ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebSpace & ebUCase_A & ebLCase_d & ebLCase_a & ebLCase_p & ebLCase_t & ebLCase_e & ebLCase_r & ebSpace & ebLCase_u & ebLCase_n & ebLCase_d & ebLCase_e & ebLCase_r & ebSpace & ebUCase_W & ebLCase_i & ebLCase_n & ebLCase_d & ebLCase_o & ebLCase_w & ebLCase_s & ebSpace & ebUCase_V & ebLCase_i & ebLCase_s & ebLCase_t & ebLCase_a & ebSpace & ebLCase_o & ebLCase_r & ebSpace & ebLCase_l & ebLCase_a & ebLCase_t & ebLCase_e & ebLCase_r & ebSpace & ebLCase_i & ebLCase_s & ebSpace & ebLCase_n & ebLCase_o & ebLCase_t & ebSpace & ebLCase_c & ebLCase_o & ebLCase_m & ebLCase_p & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_b & ebLCase_l & ebLCase_e & ebParenClose
+			Debug.Print strDisplayError
+			c.SetAttrib ebUCase_A & ebUCase_W & ebLCase_a & ebLCase_r & ebLCase_n & ebLCase_i & ebLCase_n & ebLCase_g & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e, strDisplayError
+		End If
+
+		'Determine RefreshRate range
+		Dim dblDisplayMinRefreshRate As Double
+		Dim dblDisplayMaxRefreshRate As Double
+		dblDisplayMinRefreshRate = 40
+		dblDisplayMaxRefreshRate = 201
+		If c.AttribExists(Display.Name & ebDot & ebUCase_M & ebLCase_i & ebLCase_n & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e) Then dblDisplayMinRefreshRate = CDbl(c.GetAttrib(Display.Name & ebDot & ebUCase_M & ebLCase_i & ebLCase_n & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e))
+		If c.AttribExists(Display.Name & ebDot & ebUCase_M & ebLCase_a & ebLCase_x & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e) Then dblDisplayMaxRefreshRate = CDbl(c.GetAttrib(Display.Name & ebDot & ebUCase_M & ebLCase_a & ebLCase_x & ebUCase_R & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebUCase_R & ebLCase_a & ebLCase_t & ebLCase_e))
+
+		'Ensure that the refresh rate is within range
+		If Display.CalculatedRefreshRate < dblDisplayMinRefreshRate Or Display.CalculatedRefreshRate > dblDisplayMaxRefreshRate Then
+			'Unable to obtain a valid refresh rate.\n\nPlease ensure your display adapter is configured with the most recent and device specific driver.\n(Standard Display Adapter under Windows Vista is not compatible)
+			Rte.AbortExperiment -999, ebUCase_U & ebLCase_n & ebLCase_a & ebLCase_b & ebLCase_l & ebLCase_e & ebSpace & ebLCase_t & ebLCase_o & ebSpace & ebLCase_o & ebLCase_b & ebLCase_t & ebLCase_a & ebLCase_i & ebLCase_n & ebSpace & ebLCase_a & ebSpace & ebLCase_v & ebLCase_a & ebLCase_l & ebLCase_i & ebLCase_d & ebSpace & ebLCase_r & ebLCase_e & ebLCase_f & ebLCase_r & ebLCase_e & ebLCase_s & ebLCase_h & ebSpace & ebLCase_r & ebLCase_a & ebLCase_t & ebLCase_e & ebDot & ebLf & ebLf & ebUCase_P & ebLCase_l & ebLCase_e & ebLCase_a & ebLCase_s & ebLCase_e & ebSpace & ebLCase_e & ebLCase_n & ebLCase_s & ebLCase_u & ebLCase_r & ebLCase_e & ebSpace & ebLCase_y & ebLCase_o & ebLCase_u & ebLCase_r & ebSpace & ebLCase_d & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebSpace & ebLCase_a & ebLCase_d & ebLCase_a & ebLCase_p & ebLCase_t & ebLCase_e & ebLCase_r & ebSpace & ebLCase_i & ebLCase_s & ebSpace & ebLCase_c & ebLCase_o & ebLCase_n & ebLCase_f & ebLCase_i & ebLCase_g & ebLCase_u & ebLCase_r & ebLCase_e & ebLCase_d & ebSpace & ebLCase_w & ebLCase_i & ebLCase_t & ebLCase_h & ebSpace & ebLCase_t & ebLCase_h & ebLCase_e & ebSpace & ebLCase_m & ebLCase_o & ebLCase_s & ebLCase_t & ebSpace & ebLCase_r & ebLCase_e & ebLCase_c & ebLCase_e & ebLCase_n & ebLCase_t & ebSpace & ebLCase_a & ebLCase_n & ebLCase_d & ebSpace & ebLCase_d & ebLCase_e & ebLCase_v & ebLCase_i & ebLCase_c & ebLCase_e & ebSpace & ebLCase_s & ebLCase_p & ebLCase_e & ebLCase_c & ebLCase_i & ebLCase_f & ebLCase_i & ebLCase_c & ebSpace & ebLCase_d & ebLCase_r & ebLCase_i & ebLCase_v & ebLCase_e & ebLCase_r & ebDot & ebLf & ebParenOpen & ebUCase_S & ebLCase_t & ebLCase_a & ebLCase_n & ebLCase_d & ebLCase_a & ebLCase_r & ebLCase_d & ebSpace & ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebSpace & ebUCase_A & ebLCase_d & ebLCase_a & ebLCase_p & ebLCase_t & ebLCase_e & ebLCase_r & ebSpace & ebLCase_u & ebLCase_n & ebLCase_d & ebLCase_e & ebLCase_r & ebSpace & ebUCase_W & ebLCase_i & ebLCase_n & ebLCase_d & ebLCase_o & ebLCase_w & ebLCase_s & ebSpace & ebUCase_V & ebLCase_i & ebLCase_s & ebLCase_t & ebLCase_a & ebSpace & ebLCase_i & ebLCase_s & ebSpace & ebLCase_n & ebLCase_o & ebLCase_t & ebSpace & ebLCase_c & ebLCase_o & ebLCase_m & ebLCase_p & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_b & ebLCase_l & ebLCase_e & ebParenClose
+		End If
+	End If
+
+End Sub
+
+
+
+'--------------------------------------------------------------------------
+' InitObjects
+'
+'--------------------------------------------------------------------------
+Sub InitObjects(c As Context)
+
+	Set Photoslide = New Slide
+	Photoslide.Name = ebUCase_P & ebLCase_h & ebLCase_o & ebLCase_t & ebLCase_o & ebLCase_s & ebLCase_l & ebLCase_i & ebLCase_d & ebLCase_e
+	'{D2C2F29C-ECC9-4476-9D59-EB203A3260DA}
+	Photoslide.Guid = CGuid(&HD2C2F29C, &HECC9, &H4476, &H9D59, &HEB203A32, &H60DA)
+	Photoslide.Tag = ebEmptyText
+
+	Set PhotoslideEchoClients = New EchoClientCollection
+
+	Photoslide.LoadProperties
+
+	Set Questionslide = New Slide
+	Questionslide.Name = ebUCase_Q & ebLCase_u & ebLCase_e & ebLCase_s & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_s & ebLCase_l & ebLCase_i & ebLCase_d & ebLCase_e
+	'{FEC948EF-3CEC-4160-BE3E-80A9B38EA322}
+	Questionslide.Guid = CGuid(&HFEC948EF, &H3CEC, &H4160, &HBE3E, &H80A9B38E, &HA322)
+	Questionslide.Tag = ebEmptyText
+
+	Set QuestionslideEchoClients = New EchoClientCollection
+
+	Questionslide.LoadProperties
+
+	Set ss = New Slide
+	ss.Name = ebLCase_s & ebLCase_s
+	'{EAA2E3E5-E921-4488-8BA2-C1B02DB49E9F}
+	ss.Guid = CGuid(&HEAA2E3E5, &HE921, &H4488, &H8BA2, &HC1B02DB4, &H9E9F)
+	ss.Tag = ebEmptyText
+
+	ss.LoadProperties
+
+	Set Stimuli1 = New List
+	Stimuli1.Name = ebUCase_S & ebLCase_t & ebLCase_i & ebLCase_m & ebLCase_u & ebLCase_l & ebLCase_i & ebDigit_1
+	'{B1D64F82-3B16-4033-BE5A-65D6E8551F1D}
+	Stimuli1.Guid = CGuid(&HB1D64F82, &H3B16, &H4033, &HBE5A, &H65D6E855, &H1F1D)
+	Stimuli1.Tag = ebEmptyText
+
+	'Initialization for Stimuli1
+	
+	Set Stimuli1.Order = New RandomOrder
+	CRandomOrder(Stimuli1.Order).NoRepeatAfterReset = False
+	Set Stimuli1.Deletion = NoDeletion
+	Stimuli1.ResetEveryRun = False
+
+	Stimuli1.LoadProperties
+
+	Set Stimuli1.TerminateCondition = Cycles(1)
+	Set Stimuli1.ResetCondition = Samples(24)
+	Stimuli1.Reset
+	
+	Set allruns = New List
+	allruns.Name = ebLCase_a & ebLCase_l & ebLCase_l & ebLCase_r & ebLCase_u & ebLCase_n & ebLCase_s
+	'{A2D4E281-6570-4383-8734-23E6896E7B0D}
+	allruns.Guid = CGuid(&HA2D4E281, &H6570, &H4383, &H8734, &H23E6896E, &H7B0D)
+	allruns.Tag = ebEmptyText
+
+	'Initialization for allruns
+	
+	Set allruns.Order = New SequentialOrder
+	Set allruns.Deletion = PickOne(c.GetAttrib("Session"))
+	allruns.ResetEveryRun = True
+
+	allruns.LoadProperties
+
+	Set allruns.TerminateCondition = Samples(1)
+	Set allruns.ResetCondition = Samples(1)
+	allruns.Reset
+	
+	Set RunOrder1 = New List
+	RunOrder1.Name = ebUCase_R & ebLCase_u & ebLCase_n & ebUCase_O & ebLCase_r & ebLCase_d & ebLCase_e & ebLCase_r & ebDigit_1
+	'{C025F23F-8634-4859-8254-09B76A1AA66A}
+	RunOrder1.Guid = CGuid(&HC025F23F, &H8634, &H4859, &H8254, &H09B76A1A, &HA66A)
+	RunOrder1.Tag = ebEmptyText
+
+	'Initialization for RunOrder1
+	
+	Set RunOrder1.Order = New SequentialOrder
+	Set RunOrder1.Deletion = NoDeletion
+	RunOrder1.ResetEveryRun = False
+
+	RunOrder1.LoadProperties
+
+	Set RunOrder1.TerminateCondition = Cycles(1)
+	Set RunOrder1.ResetCondition = Samples(30)
+	RunOrder1.Reset
+	
+	Set Control1 = New List
+	Control1.Name = ebUCase_C & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_r & ebLCase_o & ebLCase_l & ebDigit_1
+	'{17B626B4-70C5-4346-ADF6-23D31580416F}
+	Control1.Guid = CGuid(&H17B626B4, &H70C5, &H4346, &HADF6, &H23D31580, &H416F)
+	Control1.Tag = ebEmptyText
+
+	'Initialization for Control1
+	
+	Set Control1.Order = New RandomOrder
+	CRandomOrder(Control1.Order).NoRepeatAfterReset = False
+	Set Control1.Deletion = NoDeletion
+	Control1.ResetEveryRun = False
+
+	Control1.LoadProperties
+
+	Set Control1.TerminateCondition = Cycles(1)
+	Set Control1.ResetCondition = Samples(8)
+	Control1.Reset
+	
+	Set Stimuli3 = New List
+	Stimuli3.Name = ebUCase_S & ebLCase_t & ebLCase_i & ebLCase_m & ebLCase_u & ebLCase_l & ebLCase_i & ebDigit_3
+	'{542AFCBD-F1B9-4638-9AB7-63BF39F0FFDE}
+	Stimuli3.Guid = CGuid(&H542AFCBD, &HF1B9, &H4638, &H9AB7, &H63BF39F0, &HFFDE)
+	Stimuli3.Tag = ebEmptyText
+
+	'Initialization for Stimuli3
+	
+	Set Stimuli3.Order = New RandomOrder
+	CRandomOrder(Stimuli3.Order).NoRepeatAfterReset = False
+	Set Stimuli3.Deletion = NoDeletion
+	Stimuli3.ResetEveryRun = False
+
+	Stimuli3.LoadProperties
+
+	Set Stimuli3.TerminateCondition = Cycles(1)
+	Set Stimuli3.ResetCondition = Samples(24)
+	Stimuli3.Reset
+	
+	Set RunOrder2 = New List
+	RunOrder2.Name = ebUCase_R & ebLCase_u & ebLCase_n & ebUCase_O & ebLCase_r & ebLCase_d & ebLCase_e & ebLCase_r & ebDigit_2
+	'{44C0091F-0906-43D1-A998-164BA6E7F3DA}
+	RunOrder2.Guid = CGuid(&H44C0091F, &H0906, &H43D1, &HA998, &H164BA6E7, &HF3DA)
+	RunOrder2.Tag = ebEmptyText
+
+	'Initialization for RunOrder2
+	
+	Set RunOrder2.Order = New SequentialOrder
+	Set RunOrder2.Deletion = NoDeletion
+	RunOrder2.ResetEveryRun = False
+
+	RunOrder2.LoadProperties
+
+	Set RunOrder2.TerminateCondition = Cycles(1)
+	Set RunOrder2.ResetCondition = Samples(30)
+	RunOrder2.Reset
+	
+	Set RunOrder3 = New List
+	RunOrder3.Name = ebUCase_R & ebLCase_u & ebLCase_n & ebUCase_O & ebLCase_r & ebLCase_d & ebLCase_e & ebLCase_r & ebDigit_3
+	'{9AB11555-5943-4453-942F-C9CBAD788620}
+	RunOrder3.Guid = CGuid(&H9AB11555, &H5943, &H4453, &H942F, &HC9CBAD78, &H8620)
+	RunOrder3.Tag = ebEmptyText
+
+	'Initialization for RunOrder3
+	
+	Set RunOrder3.Order = New SequentialOrder
+	Set RunOrder3.Deletion = NoDeletion
+	RunOrder3.ResetEveryRun = False
+
+	RunOrder3.LoadProperties
+
+	Set RunOrder3.TerminateCondition = Cycles(1)
+	Set RunOrder3.ResetCondition = Samples(30)
+	RunOrder3.Reset
+	
+	Set RunOrder4 = New List
+	RunOrder4.Name = ebUCase_R & ebLCase_u & ebLCase_n & ebUCase_O & ebLCase_r & ebLCase_d & ebLCase_e & ebLCase_r & ebDigit_4
+	'{C10D8699-ABDC-432E-BAA2-F21844969145}
+	RunOrder4.Guid = CGuid(&HC10D8699, &HABDC, &H432E, &HBAA2, &HF2184496, &H9145)
+	RunOrder4.Tag = ebEmptyText
+
+	'Initialization for RunOrder4
+	
+	Set RunOrder4.Order = New SequentialOrder
+	Set RunOrder4.Deletion = NoDeletion
+	RunOrder4.ResetEveryRun = False
+
+	RunOrder4.LoadProperties
+
+	Set RunOrder4.TerminateCondition = Cycles(1)
+	Set RunOrder4.ResetCondition = Samples(30)
+	RunOrder4.Reset
+	
+	Set Stimuli2 = New List
+	Stimuli2.Name = ebUCase_S & ebLCase_t & ebLCase_i & ebLCase_m & ebLCase_u & ebLCase_l & ebLCase_i & ebDigit_2
+	'{E91E6981-6B8C-4BDB-BDD7-FE40B9D51780}
+	Stimuli2.Guid = CGuid(&HE91E6981, &H6B8C, &H4BDB, &HBDD7, &HFE40B9D5, &H1780)
+	Stimuli2.Tag = ebEmptyText
+
+	'Initialization for Stimuli2
+	
+	Set Stimuli2.Order = New RandomOrder
+	CRandomOrder(Stimuli2.Order).NoRepeatAfterReset = False
+	Set Stimuli2.Deletion = NoDeletion
+	Stimuli2.ResetEveryRun = False
+
+	Stimuli2.LoadProperties
+
+	Set Stimuli2.TerminateCondition = Cycles(1)
+	Set Stimuli2.ResetCondition = Samples(24)
+	Stimuli2.Reset
+	
+	Set Control2 = New List
+	Control2.Name = ebUCase_C & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_r & ebLCase_o & ebLCase_l & ebDigit_2
+	'{2121A73B-27A5-4307-8954-BD8FD018208C}
+	Control2.Guid = CGuid(&H2121A73B, &H27A5, &H4307, &H8954, &HBD8FD018, &H208C)
+	Control2.Tag = ebEmptyText
+
+	'Initialization for Control2
+	
+	Set Control2.Order = New RandomOrder
+	CRandomOrder(Control2.Order).NoRepeatAfterReset = False
+	Set Control2.Deletion = NoDeletion
+	Control2.ResetEveryRun = False
+
+	Control2.LoadProperties
+
+	Set Control2.TerminateCondition = Cycles(1)
+	Set Control2.ResetCondition = Samples(8)
+	Control2.Reset
+	
+	Set Control3 = New List
+	Control3.Name = ebUCase_C & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_r & ebLCase_o & ebLCase_l & ebDigit_3
+	'{003F89A0-445D-464C-B083-C28606466C72}
+	Control3.Guid = CGuid(&H003F89A0, &H445D, &H464C, &HB083, &HC2860646, &H6C72)
+	Control3.Tag = ebEmptyText
+
+	'Initialization for Control3
+	
+	Set Control3.Order = New RandomOrder
+	CRandomOrder(Control3.Order).NoRepeatAfterReset = False
+	Set Control3.Deletion = NoDeletion
+	Control3.ResetEveryRun = False
+
+	Control3.LoadProperties
+
+	Set Control3.TerminateCondition = Cycles(1)
+	Set Control3.ResetCondition = Samples(8)
+	Control3.Reset
+	
+	Set Stimuli4 = New List
+	Stimuli4.Name = ebUCase_S & ebLCase_t & ebLCase_i & ebLCase_m & ebLCase_u & ebLCase_l & ebLCase_i & ebDigit_4
+	'{0154A1B2-2AE7-46D9-8BD0-3E897A650FC5}
+	Stimuli4.Guid = CGuid(&H0154A1B2, &H2AE7, &H46D9, &H8BD0, &H3E897A65, &H0FC5)
+	Stimuli4.Tag = ebEmptyText
+
+	'Initialization for Stimuli4
+	
+	Set Stimuli4.Order = New RandomOrder
+	CRandomOrder(Stimuli4.Order).NoRepeatAfterReset = False
+	Set Stimuli4.Deletion = NoDeletion
+	Stimuli4.ResetEveryRun = False
+
+	Stimuli4.LoadProperties
+
+	Set Stimuli4.TerminateCondition = Cycles(1)
+	Set Stimuli4.ResetCondition = Samples(24)
+	Stimuli4.Reset
+	
+	Set Control4 = New List
+	Control4.Name = ebUCase_C & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_r & ebLCase_o & ebLCase_l & ebDigit_4
+	'{5E4408A2-B84C-4791-80BA-AA05C0AD45B3}
+	Control4.Guid = CGuid(&H5E4408A2, &HB84C, &H4791, &H80BA, &HAA05C0AD, &H45B3)
+	Control4.Tag = ebEmptyText
+
+	'Initialization for Control4
+	
+	Set Control4.Order = New RandomOrder
+	CRandomOrder(Control4.Order).NoRepeatAfterReset = False
+	Set Control4.Deletion = NoDeletion
+	Control4.ResetEveryRun = False
+
+	Control4.LoadProperties
+
+	Set Control4.TerminateCondition = Cycles(1)
+	Set Control4.ResetCondition = Samples(8)
+	Control4.Reset
+	
+	Set List1 = New List
+	List1.Name = ebUCase_L & ebLCase_i & ebLCase_s & ebLCase_t & ebDigit_1
+	'{C3469131-DC10-46D1-8304-E580C59E7537}
+	List1.Guid = CGuid(&HC3469131, &HDC10, &H46D1, &H8304, &HE580C59E, &H7537)
+	List1.Tag = ebEmptyText
+
+	'Initialization for List1
+	
+	Set List1.Order = New SequentialOrder
+	Set List1.Deletion = NoDeletion
+	List1.ResetEveryRun = False
+
+	List1.LoadProperties
+
+	Set List1.TerminateCondition = Cycles(1)
+	Set List1.ResetCondition = Samples(1)
+	List1.Reset
+	
+	Set SessionProc = New Procedure
+	SessionProc.Name = ebUCase_S & ebLCase_e & ebLCase_s & ebLCase_s & ebLCase_i & ebLCase_o & ebLCase_n & ebUCase_P & ebLCase_r & ebLCase_o & ebLCase_c
+	'{BE88D91A-E9B1-4ECE-BC81-5AB0409B2536}
+	SessionProc.Guid = CGuid(&HBE88D91A, &HE9B1, &H4ECE, &HBC81, &H5AB0409B, &H2536)
+	SessionProc.Tag = ebEmptyText
+
+	SessionProc.LoadProperties
+	SessionProc.Subroutine = ebUCase_S & ebLCase_e & ebLCase_s & ebLCase_s & ebLCase_i & ebLCase_o & ebLCase_n & ebUCase_P & ebLCase_r & ebLCase_o & ebLCase_c & ebUnderscore & ebUCase_R & ebLCase_u & ebLCase_n
+
+	Set BlockProc = New Procedure
+	BlockProc.Name = ebUCase_B & ebLCase_l & ebLCase_o & ebLCase_c & ebLCase_k & ebUCase_P & ebLCase_r & ebLCase_o & ebLCase_c
+	'{B56198F7-D7CC-48CD-A9AF-CD253DB4F0F9}
+	BlockProc.Guid = CGuid(&HB56198F7, &HD7CC, &H48CD, &HA9AF, &HCD253DB4, &HF0F9)
+	BlockProc.Tag = ebEmptyText
+
+	BlockProc.LoadProperties
+	BlockProc.Subroutine = ebUCase_B & ebLCase_l & ebLCase_o & ebLCase_c & ebLCase_k & ebUCase_P & ebLCase_r & ebLCase_o & ebLCase_c & ebUnderscore & ebUCase_R & ebLCase_u & ebLCase_n
+
+	Set run1proc = New Procedure
+	run1proc.Name = ebLCase_r & ebLCase_u & ebLCase_n & ebDigit_1 & ebLCase_p & ebLCase_r & ebLCase_o & ebLCase_c
+	'{05A51BA5-96C5-4512-B118-8806A119DBA8}
+	run1proc.Guid = CGuid(&H05A51BA5, &H96C5, &H4512, &HB118, &H8806A119, &HDBA8)
+	run1proc.Tag = ebEmptyText
+
+	run1proc.LoadProperties
+	run1proc.Subroutine = ebLCase_r & ebLCase_u & ebLCase_n & ebDigit_1 & ebLCase_p & ebLCase_r & ebLCase_o & ebLCase_c & ebUnderscore & ebUCase_R & ebLCase_u & ebLCase_n
+
+	Set run2proc = New Procedure
+	run2proc.Name = ebLCase_r & ebLCase_u & ebLCase_n & ebDigit_2 & ebLCase_p & ebLCase_r & ebLCase_o & ebLCase_c
+	'{5E4CCD02-74EF-483A-BBE6-0A5537D5CD03}
+	run2proc.Guid = CGuid(&H5E4CCD02, &H74EF, &H483A, &HBBE6, &H0A5537D5, &HCD03)
+	run2proc.Tag = ebEmptyText
+
+	run2proc.LoadProperties
+	run2proc.Subroutine = ebLCase_r & ebLCase_u & ebLCase_n & ebDigit_2 & ebLCase_p & ebLCase_r & ebLCase_o & ebLCase_c & ebUnderscore & ebUCase_R & ebLCase_u & ebLCase_n
+
+	Set run3proc = New Procedure
+	run3proc.Name = ebLCase_r & ebLCase_u & ebLCase_n & ebDigit_3 & ebLCase_p & ebLCase_r & ebLCase_o & ebLCase_c
+	'{F0B64F4D-5023-4467-AB36-6837246CE864}
+	run3proc.Guid = CGuid(&HF0B64F4D, &H5023, &H4467, &HAB36, &H6837246C, &HE864)
+	run3proc.Tag = ebEmptyText
+
+	run3proc.LoadProperties
+	run3proc.Subroutine = ebLCase_r & ebLCase_u & ebLCase_n & ebDigit_3 & ebLCase_p & ebLCase_r & ebLCase_o & ebLCase_c & ebUnderscore & ebUCase_R & ebLCase_u & ebLCase_n
+
+	Set run4proc = New Procedure
+	run4proc.Name = ebLCase_r & ebLCase_u & ebLCase_n & ebDigit_4 & ebLCase_p & ebLCase_r & ebLCase_o & ebLCase_c
+	'{51796B76-15BD-4B15-A130-02F35A9A5A4E}
+	run4proc.Guid = CGuid(&H51796B76, &H15BD, &H4B15, &HA130, &H02F35A9A, &H5A4E)
+	run4proc.Tag = ebEmptyText
+
+	run4proc.LoadProperties
+	run4proc.Subroutine = ebLCase_r & ebLCase_u & ebLCase_n & ebDigit_4 & ebLCase_p & ebLCase_r & ebLCase_o & ebLCase_c & ebUnderscore & ebUCase_R & ebLCase_u & ebLCase_n
+
+	Set PictureDisplay = New ImageDisplay
+	PictureDisplay.Name = ebUCase_P & ebLCase_i & ebLCase_c & ebLCase_t & ebLCase_u & ebLCase_r & ebLCase_e & ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y
+	'{E723B3D7-FEB3-4FF2-95E8-673E0396A277}
+	PictureDisplay.Guid = CGuid(&HE723B3D7, &HFEB3, &H4FF2, &H95E8, &H673E0396, &HA277)
+	PictureDisplay.Tag = ebEmptyText
+
+	Set PictureDisplayEchoClients = New EchoClientCollection
+
+	PictureDisplay.LoadProperties
+
+	Set QuestionDisplay = New ImageDisplay
+	QuestionDisplay.Name = ebUCase_Q & ebLCase_u & ebLCase_e & ebLCase_s & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y
+	'{832E9549-5B54-4F0C-AFD4-021204ECC046}
+	QuestionDisplay.Guid = CGuid(&H832E9549, &H5B54, &H4F0C, &HAFD4, &H021204EC, &HC046)
+	QuestionDisplay.Tag = ebEmptyText
+
+	Set QuestionDisplayEchoClients = New EchoClientCollection
+
+	QuestionDisplay.LoadProperties
+
+	Set ITI = New ImageDisplay
+	ITI.Name = ebUCase_I & ebUCase_T & ebUCase_I
+	'{558B57DC-D069-4C17-9253-8D5E92EDB469}
+	ITI.Guid = CGuid(&H558B57DC, &HD069, &H4C17, &H9253, &H8D5E92ED, &HB469)
+	ITI.Tag = ebEmptyText
+
+	Set ITIEchoClients = New EchoClientCollection
+
+	ITI.LoadProperties
+
+	Set Instructions = New TextDisplay
+	Instructions.Name = ebUCase_I & ebLCase_n & ebLCase_s & ebLCase_t & ebLCase_r & ebLCase_u & ebLCase_c & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_s
+	'{2DDAF420-E75C-40B9-BB5D-5584373D0ABD}
+	Instructions.Guid = CGuid(&H2DDAF420, &HE75C, &H40B9, &HBB5D, &H5584373D, &H0ABD)
+	Instructions.Tag = ebEmptyText
+
+	Set InstructionsEchoClients = New EchoClientCollection
+
+	Instructions.LoadProperties
+
+	Set EndOfStudy = New TextDisplay
+	EndOfStudy.Name = ebUCase_E & ebLCase_n & ebLCase_d & ebUCase_O & ebLCase_f & ebUCase_S & ebLCase_t & ebLCase_u & ebLCase_d & ebLCase_y
+	'{1E3A10BC-C624-40A0-93F0-4DCC8A92D813}
+	EndOfStudy.Guid = CGuid(&H1E3A10BC, &HC624, &H40A0, &H93F0, &H4DCC8A92, &HD813)
+	EndOfStudy.Tag = ebEmptyText
+
+	EndOfStudy.LoadProperties
+
+	Set Fixationtxt = New TextDisplay
+	Fixationtxt.Name = ebUCase_F & ebLCase_i & ebLCase_x & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t
+	'{14894DC7-5267-452F-91FB-BC75265A282E}
+	Fixationtxt.Guid = CGuid(&H14894DC7, &H5267, &H452F, &H91FB, &HBC75265A, &H282E)
+	Fixationtxt.Tag = ebEmptyText
+
+	Set FixationtxtEchoClients = New EchoClientCollection
+
+	Fixationtxt.LoadProperties
+
+	Set Fixationtxt1 = New TextDisplay
+	Fixationtxt1.Name = ebUCase_F & ebLCase_i & ebLCase_x & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t & ebDigit_1
+	'{E7D9C83E-C132-4499-AE07-5309FA014EC9}
+	Fixationtxt1.Guid = CGuid(&HE7D9C83E, &HC132, &H4499, &HAE07, &H5309FA01, &H4EC9)
+	Fixationtxt1.Tag = ebEmptyText
+
+	Set Fixationtxt1EchoClients = New EchoClientCollection
+
+	Fixationtxt1.LoadProperties
+
+	Set ITItxt = New TextDisplay
+	ITItxt.Name = ebUCase_I & ebUCase_T & ebUCase_I & ebLCase_t & ebLCase_x & ebLCase_t
+	'{DC733AE0-DBFF-4C8D-9F2E-1B2F70104D45}
+	ITItxt.Guid = CGuid(&HDC733AE0, &HDBFF, &H4C8D, &H9F2E, &H1B2F7010, &H4D45)
+	ITItxt.Tag = ebEmptyText
+
+	ITItxt.LoadProperties
+
+	Set Fixationtxt2 = New TextDisplay
+	Fixationtxt2.Name = ebUCase_F & ebLCase_i & ebLCase_x & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t & ebDigit_2
+	'{25C4CEEA-AC26-442E-8DB4-967F96777ECA}
+	Fixationtxt2.Guid = CGuid(&H25C4CEEA, &HAC26, &H442E, &H8DB4, &H967F9677, &H7ECA)
+	Fixationtxt2.Tag = ebEmptyText
+
+	Set Fixationtxt2EchoClients = New EchoClientCollection
+
+	Fixationtxt2.LoadProperties
+
+	Set Fixationtxt3 = New TextDisplay
+	Fixationtxt3.Name = ebUCase_F & ebLCase_i & ebLCase_x & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t & ebDigit_3
+	'{C00F7804-6434-4FE4-909A-1AF850495EE1}
+	Fixationtxt3.Guid = CGuid(&HC00F7804, &H6434, &H4FE4, &H909A, &H1AF85049, &H5EE1)
+	Fixationtxt3.Tag = ebEmptyText
+
+	Set Fixationtxt3EchoClients = New EchoClientCollection
+
+	Fixationtxt3.LoadProperties
+
+	Set Fixationtxt4 = New TextDisplay
+	Fixationtxt4.Name = ebUCase_F & ebLCase_i & ebLCase_x & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t & ebDigit_4
+	'{F2D5FCC3-BCC2-4375-B2D4-E57CEE920E9D}
+	Fixationtxt4.Guid = CGuid(&HF2D5FCC3, &HBCC2, &H4375, &HB2D4, &HE57CEE92, &H0E9D)
+	Fixationtxt4.Tag = ebEmptyText
+
+	Set Fixationtxt4EchoClients = New EchoClientCollection
+
+	Fixationtxt4.LoadProperties
+
+	Set Fixationtxt5 = New TextDisplay
+	Fixationtxt5.Name = ebUCase_F & ebLCase_i & ebLCase_x & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t & ebDigit_5
+	'{A9E3D186-4928-4BA1-99E8-C19998223CAB}
+	Fixationtxt5.Guid = CGuid(&HA9E3D186, &H4928, &H4BA1, &H99E8, &HC1999822, &H3CAB)
+	Fixationtxt5.Tag = ebEmptyText
+
+	Set Fixationtxt5EchoClients = New EchoClientCollection
+
+	Fixationtxt5.LoadProperties
+
+	Set Fixationtxt6 = New TextDisplay
+	Fixationtxt6.Name = ebUCase_F & ebLCase_i & ebLCase_x & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t & ebDigit_6
+	'{C91392D6-6796-480C-AD4E-B0233230B32D}
+	Fixationtxt6.Guid = CGuid(&HC91392D6, &H6796, &H480C, &HAD4E, &HB0233230, &HB32D)
+	Fixationtxt6.Tag = ebEmptyText
+
+	Set Fixationtxt6EchoClients = New EchoClientCollection
+
+	Fixationtxt6.LoadProperties
+
+	Set Fixationtxt7 = New TextDisplay
+	Fixationtxt7.Name = ebUCase_F & ebLCase_i & ebLCase_x & ebLCase_a & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t & ebDigit_7
+	'{FCC834E3-0200-4CAB-B6F7-10425B2B965F}
+	Fixationtxt7.Guid = CGuid(&HFCC834E3, &H0200, &H4CAB, &HB6F7, &H10425B2B, &H965F)
+	Fixationtxt7.Tag = ebEmptyText
+
+	Set Fixationtxt7EchoClients = New EchoClientCollection
+
+	Fixationtxt7.LoadProperties
+
+	Set Questiontxt = New TextDisplay
+	Questiontxt.Name = ebUCase_Q & ebLCase_u & ebLCase_e & ebLCase_s & ebLCase_t & ebLCase_i & ebLCase_o & ebLCase_n & ebLCase_t & ebLCase_x & ebLCase_t
+	'{8C782C4E-8725-4B6F-89DB-094029E3447C}
+	Questiontxt.Guid = CGuid(&H8C782C4E, &H8725, &H4B6F, &H89DB, &H094029E3, &H447C)
+	Questiontxt.Tag = ebEmptyText
+
+	Set QuestiontxtEchoClients = New EchoClientCollection
+
+	Questiontxt.LoadProperties
+
+
+End Sub
+
+
+'--------------------------------------------------------------------------
+' InitPackages
+'
+'--------------------------------------------------------------------------
+Sub InitPackages(c As Context)
+
+End Sub
+
+
+
+'--------------------------------------------------------------------------
+' InitGlobals
+'
+'--------------------------------------------------------------------------
+Sub InitGlobals(c As Context)
+
+End Sub
+
+
+
+'--------------------------------------------------------------------------
+
+
+'--------------------------------------------------------------------------
+'--------------------------------------------------------------------------
+' UnInitGlobals
+'--------------------------------------------------------------------------
+Sub UnInitGlobals()
+End Sub
+'--------------------------------------------------------------------------
+' UnInitDevices
+'--------------------------------------------------------------------------
+Sub UnInitDevices()
+
+	'UnInit All Devices
+	Rte.DeviceManager.UnInit
+	Display.Close
+	Set Display = Nothing
+
+	Keyboard.Close
+	Set Keyboard = Nothing
+
+	Mouse.Close
+	Set Mouse = Nothing
+
+End Sub
+
+
+'--------------------------------------------------------------------------
+'--------------------------------------------------------------------------
+' UnInitPackages
+'--------------------------------------------------------------------------
+Sub UnInitPackages()
+End Sub
+
+
+'--------------------------------------------------------------------------
+' UnInitObjects
+'
+'--------------------------------------------------------------------------
+Sub UnInitObjects()
+
+	Set Photoslide = Nothing
+
+	Set PhotoslideEchoClients = Nothing
+
+	Set Questionslide = Nothing
+
+	Set QuestionslideEchoClients = Nothing
+
+	Set ss = Nothing
+
+	Set Stimuli1 = Nothing
+
+	Set allruns = Nothing
+
+	Set RunOrder1 = Nothing
+
+	Set Control1 = Nothing
+
+	Set Stimuli3 = Nothing
+
+	Set RunOrder2 = Nothing
+
+	Set RunOrder3 = Nothing
+
+	Set RunOrder4 = Nothing
+
+	Set Stimuli2 = Nothing
+
+	Set Control2 = Nothing
+
+	Set Control3 = Nothing
+
+	Set Stimuli4 = Nothing
+
+	Set Control4 = Nothing
+
+	Set List1 = Nothing
+
+	Set SessionProc = Nothing
+
+	Set BlockProc = Nothing
+
+	Set run1proc = Nothing
+
+	Set run2proc = Nothing
+
+	Set run3proc = Nothing
+
+	Set run4proc = Nothing
+
+	Set PictureDisplay = Nothing
+
+	Set PictureDisplayEchoClients = Nothing
+
+	Set QuestionDisplay = Nothing
+
+	Set QuestionDisplayEchoClients = Nothing
+
+	Set ITI = Nothing
+
+	Set ITIEchoClients = Nothing
+
+	Set Instructions = Nothing
+
+	Set InstructionsEchoClients = Nothing
+
+	Set EndOfStudy = Nothing
+
+	Set Fixationtxt = Nothing
+
+	Set FixationtxtEchoClients = Nothing
+
+	Set Fixationtxt1 = Nothing
+
+	Set Fixationtxt1EchoClients = Nothing
+
+	Set ITItxt = Nothing
+
+	Set Fixationtxt2 = Nothing
+
+	Set Fixationtxt2EchoClients = Nothing
+
+	Set Fixationtxt3 = Nothing
+
+	Set Fixationtxt3EchoClients = Nothing
+
+	Set Fixationtxt4 = Nothing
+
+	Set Fixationtxt4EchoClients = Nothing
+
+	Set Fixationtxt5 = Nothing
+
+	Set Fixationtxt5EchoClients = Nothing
+
+	Set Fixationtxt6 = Nothing
+
+	Set Fixationtxt6EchoClients = Nothing
+
+	Set Fixationtxt7 = Nothing
+
+	Set Fixationtxt7EchoClients = Nothing
+
+	Set Questiontxt = Nothing
+
+	Set QuestiontxtEchoClients = Nothing
+
+
+End Sub
+
+
+'--------------------------------------------------------------------------
+' Main
+'
+'--------------------------------------------------------------------------
+Sub Main()
+
+	' Create and initialize the default context, data file,
+	' and provide global access to the context.
+	Dim c As Context
+	Set c = New Context
+	c.Name = "ebContext"
+	Set c.DataFile = New DataFile
+	c.PushNewFrame
+	Set ebContext = c
+
+	' Set the log level names
+	c.SetLogLevelName 1, "Session"
+	c.SetLogLevelName 2, "Block"
+	c.SetLogLevelName 3, "Trial"
+	c.SetLogLevelName 4, "SubTrial"
+	c.SetLogLevelName 5, "LogLevel5"
+	c.SetLogLevelName 6, "LogLevel6"
+	c.SetLogLevelName 7, "LogLevel7"
+	c.SetLogLevelName 8, "LogLevel8"
+	c.SetLogLevelName 9, "LogLevel9"
+	c.SetLogLevelName 10, "LogLevel10"
+
+	' Set standard logging items
+	ebContext.SetAttrib "Experiment", "PFOC_v3_final_4runs_mod1"
+	ebContext.SetAttrib "SessionDate", Date$
+	ebContext.SetAttrib "SessionTime", Time$
+	ebContext.SetAttrib "SessionStartDateTimeUtc", NowUtc()
+
+	'Initialize global variables for packages
+	InitGlobals c
+
+	' Initialize the Display Device(s) for runtime
+	Dim DisplayDisplayDeviceInfo As DisplayDeviceInfo
+	DisplayDisplayDeviceInfo.DefaultColor = Color.White
+	DisplayDisplayDeviceInfo.DisplayIndex = 1
+	If c.AttribExists(ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebDot & ebUCase_D & ebLCase_e & ebLCase_f & ebLCase_a & ebLCase_u & ebLCase_l & ebLCase_t & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_o & ebLCase_r) Then DisplayDisplayDeviceInfo.DefaultColor = CColor(c.GetAttrib(ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebDot & ebUCase_D & ebLCase_e & ebLCase_f & ebLCase_a & ebLCase_u & ebLCase_l & ebLCase_t & ebUCase_C & ebLCase_o & ebLCase_l & ebLCase_o & ebLCase_r))
+	If c.AttribExists(ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebDot & ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebUCase_I & ebLCase_n & ebLCase_d & ebLCase_e & ebLCase_x) Then DisplayDisplayDeviceInfo.DisplayIndex = CLng(c.GetAttrib(ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebDot & ebUCase_D & ebLCase_i & ebLCase_s & ebLCase_p & ebLCase_l & ebLCase_a & ebLCase_y & ebUCase_I & ebLCase_n & ebLCase_d & ebLCase_e & ebLCase_x))
+
+	
+	
+	CreateDefaultPort DisplayDisplayDeviceInfo.DefaultColor, "", DisplayDisplayDeviceInfo.DisplayIndex
+	
+	If Basic.OS = ebWin32 Then
+		WinActivate "E-Run Experiment Window"
+	End If
+
+	' Get the StartupInfo
+
+	' Set the defaults for all of the StartupInfo
+	If Not c.AttribExists("Subject") Then c.SetAttrib "Subject", "1"
+	If Not c.AttribExists("Session") Then c.SetAttrib "Session", "1"
+
+	' Determine if StartupInfo.UseDefaults exists and is True/False to override prompts for StartupInfo parameters
+	Dim bStartupInfoUseDefaults As Boolean
+	bStartupInfoUseDefaults = False
+	If c.AttribExists("StartupInfo.UseDefaults") Then bStartupInfoUseDefaults = CLogical(c.GetAttrib("StartupInfo.UseDefaults"))
+	If Not bStartupInfoUseDefaults Then
+
+		Dim vAnswer As Variant
+StartupInfo_Begin:
+
+StartupInfoPrompt_Subject:
+		vAnswer = AskBox("Please enter the Subject Number (1-32767, 0=No Data Logging):", c.GetAttrib("Subject"))
+		If Not IsEmpty(vAnswer) Then
+			If Not IsNumeric(vAnswer) Then
+				MsgBox "Please enter an integer value"
+				GoTo StartupInfoPrompt_Subject
+			ElseIf CLng(vAnswer) < 0 Then
+				MsgBox "The value for Subject must not be less than 0"
+				GoTo StartupInfoPrompt_Subject
+			ElseIf CLng(vAnswer) > 32767 Then
+				MsgBox "The value for Subject must not be greater than 32767"
+				GoTo StartupInfoPrompt_Subject
+			End If
+		Else
+			GoTo ExperimentAbort
+		End If
+
+		c.SetAttrib "Subject", CStr(vAnswer)
+
+StartupInfoPrompt_Session:
+		vAnswer = AskBox("Please enter the Session Number (0-32767):", c.GetAttrib("Session"))
+		If Not IsEmpty(vAnswer) Then
+			If Not IsNumeric(vAnswer) Then
+				MsgBox "Please enter an integer value"
+				GoTo StartupInfoPrompt_Session
+			ElseIf CLng(vAnswer) < 0 Then
+				MsgBox "The value for Session must not be less than 0"
+				GoTo StartupInfoPrompt_Session
+			ElseIf CLng(vAnswer) > 32767 Then
+				MsgBox "The value for Session must not be greater than 32767"
+				GoTo StartupInfoPrompt_Session
+			End If
+		Else
+			GoTo ExperimentAbort
+		End If
+
+		c.SetAttrib "Session", CStr(vAnswer)
+
+		' Display the summary
+		Dim strSummary As String
+		strSummary = "Subject:    " & c.GetAttrib("Subject") & "\n"
+		strSummary = strSummary & "Session:    " & c.GetAttrib("Session") & "\n"
+		strSummary = strSummary & "\nContinue with the above startup info?"
+
+		Dim nSummaryAnswer As Integer
+		nSummaryAnswer = MsgBox(strSummary, ebYesNoCancel + ebQuestion, "Summary of Startup Info")
+		If nSummaryAnswer = ebNo Then
+				GoTo StartupInfo_Begin
+		ElseIf nSummaryAnswer = ebCancel Then
+				GoTo ExperimentAbort
+		End If
+
+	End If
+
+
+	'Assign the Clock.Scale value
+	Clock.Scale = 1.000000
+
+	'If the attribute Clock.Scale.Override exists
+	'  then use it for to set the Clock.Scale value
+	If c.AttribExists("Clock.Scale.Override") Then
+		Clock.Scale = CDbl(c.GetAttrib("Clock.Scale.Override"))
+	End If
+
+	' Set the Filenames for the data files
+	Dim strFilenameBase As String
+	Dim strFilenameRecovery As String
+	Dim strFilenameEDAT As String
+
+	'If the attribute DataFile.Filename.Override exists
+	'  then use it for the .txt and .edat2 filenames
+	If c.AttribExists("DataFile.Filename.Override") Then
+
+		' Set the default Data Filename
+		strFilenameBase = CStr(c.GetAttrib("DataFile.Filename.Override"))
+
+	Else
+
+		' Set the default Data Filename
+		strFilenameBase = CStr(c.GetAttrib("Experiment")) & "-" & CStr(c.GetAttrib("Subject")) & "-" & CStr(c.GetAttrib("Session"))
+
+	End If
+
+	'Set the name of the data file
+	strFilenameRecovery = strFilenameBase & ".txt"
+	strFilenameEDAT = strFilenameBase & ".edat2"
+	c.DataFile.Filename = strFilenameRecovery
+	c.SetAttrib "DataFile.Basename", strFilenameBase
+
+	' If we are logging data, then prompt to overwrite the data file if it exists
+	If CLng(c.GetAttrib("Subject")) <> 0 Then
+		If FileExists(c.DataFile.Filename) Or FileExists(strFilenameEDAT) Then
+			If ebYes <> MsgBox("WARNING: The data file and/or recovery file already exists:\nFILE: " & c.DataFile.Filename & "\n\nDo you want to overwrite?", ebYesNo + ebQuestion) Then
+				GoTo ExperimentAbort
+			End If
+			' If you receive an error here then ensure that your E-Recovery (txt) file or 
+			' the edat2 file is not open and then try the experiment run again.
+			If FileExists(strFilenameEDAT) Then Kill strFilenameEDAT
+			If FileExists(c.DataFile.Filename) Then Kill c.DataFile.Filename
+		End If
+	End If
+
+	' Set defaults for RandomSeed and GroupNumber if StartupInfo did not assign their values
+	If Not c.AttribExists("RandomSeed") Then c.SetAttrib "RandomSeed", PRNG.GetSeed()
+	If Not c.AttribExists("Group") Then c.SetAttrib "Group", "1"
+
+	'Set the random seed
+	Randomize CLng(c.GetAttrib("RandomSeed"))
+
+	Dim nPriority As Long
+	'Priority for init routines
+	nPriority = 3
+
+	'Determine if the priority should use the override value
+	If c.AttribExists("SetOSThreadPriority.Init.Override") Then
+		nPriority = c.GetAttrib("SetOSThreadPriority.Init.Override")
+	End If
+
+	'Update E-Prime Priority for INIT routines
+	SetOSThreadPriority nPriority
+
+	' Initialize all system devices, packages, and objects
+	InitDevices c
+	InitPackages c
+	InitObjects c
+
+	'Priority for start of experiment
+	nPriority = -1
+
+	'Determine if the priority should use the override value
+	If c.AttribExists("SetOSThreadPriority.Override") Then
+		nPriority = c.GetAttrib("SetOSThreadPriority.Override")
+	End If
+
+	'Update E-Prime Priority for start of experiment
+	SetOSThreadPriority nPriority
+
+	'Disable System power save mode
+	Rte.PreventSystemIdle = True
+
+	If CLng(c.GetAttrib("Subject")) < 0 Then
+		Rte.AbortExperiment 12102, ebUCase_S & ebLCase_u & ebLCase_b & ebLCase_j & ebLCase_e & ebLCase_c & ebLCase_t & ebSpace & ebLCase_c & ebLCase_a & ebLCase_n & ebLCase_n & ebLCase_o & ebLCase_t & ebSpace & ebLCase_b & ebLCase_e & ebSpace & ebLCase_l & ebLCase_e & ebLCase_s & ebLCase_s & ebSpace & ebLCase_t & ebLCase_h & ebLCase_a & ebLCase_n & ebSpace & ebDigit_0 & ebDot
+	End If
+
+	If CLng(c.GetAttrib("Session")) < 1 Then
+		Rte.AbortExperiment 12103, ebUCase_S & ebLCase_e & ebLCase_s & ebLCase_s & ebLCase_i & ebLCase_o & ebLCase_n & ebSpace & ebLCase_c & ebLCase_a & ebLCase_n & ebLCase_n & ebLCase_o & ebLCase_t & ebSpace & ebLCase_b & ebLCase_e & ebSpace & ebLCase_l & ebLCase_e & ebLCase_s & ebLCase_s & ebSpace & ebLCase_t & ebLCase_h & ebLCase_a & ebLCase_n & ebSpace & ebDigit_1 & ebDot
+	End If
+
+	' If we are logging data, then open the datafile
+	If CLng(c.GetAttrib("Subject")) <> 0 Then
+		c.DataFile.Open
+		c.LogHeader
+	End If
+
+
+	'Setup the DataFile.BaseName attribute
+	c.SetAttrib "DataFile.BaseName", Replace(c.DataFile.Filename, ".txt", ebEmptyText)
+
+	' Log clock timing information
+	c.SetAttrib "Clock.Information", Clock.Information
+
+	' Log E-Studio version
+	c.SetAttrib "StudioVersion", "2.0.10.147"
+
+	' Log runtime version.
+	c.SetAttrib "RuntimeVersion", Rte.Version.Major & ebDot & Rte.Version.Minor & ebDot & Rte.Version.Internal & ebDot & Rte.Version.Build
+	c.SetAttrib "RuntimeVersionExpected", 2 & ebDot & 0 & ebDot & 10 & ebDot & 242
+
+	' Log experiment version
+	c.SetAttrib "ExperimentVersion", "1.0.0.147"
+
+	' ExperimentStart
+	 Rte.ExperimentStart
+	' Start the running of the Experiment
+	SessionProc.Run c
+	' ExperimentFinish
+	 Rte.ExperimentFinish
+	' Log clock timing information
+	c.SetAttrib "Clock.Information", Clock.Information
+	ebContext.SetAttrib "SessionFinishDateTimeUtc", NowUtc()
+
+	' Clean up the context and close the datafile
+	If CLng(c.GetAttrib("Subject")) <> 0 Then
+		c.DataFile.Close
+		' Attempt to convert the recovery file into a data file
+		Dim nConvert As Long
+		nConvert = c.DataFile.Convert(ebProgressSimple)
+		If nConvert = 0 Then
+			' Settings in E-Studio are set to not remove E-Recovery file
+		Else
+			' The datafile failed to convert!
+			MsgBox "ERROR: The datafile did not convert!\nFILE: " & c.DataFile.Filename & "\n\nIt is recommended that you recover your data with the E-Recovery utility"
+			MsgBox c.DataFile.GetLastErrorMessage()
+		End If
+	End If
+ExperimentFinish:
+
+	UnInitObjects
+
+	UnInitPackages
+	UnInitDevices
+
+	UnInitGlobals
+
+ExperimentAbort:
+
+	' Clean up the context
+	c.PopFrame
+	Set c = Nothing
+	Set ebContext = Nothing
+
+	DestroyDefaultPort
+
+End Sub
+
